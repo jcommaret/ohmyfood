@@ -1,0 +1,17 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+@import url("http://fonts.googleapis.com/css?family=Shrikhand");
+:root {
+  box-sizing: border-box;
+  --font-roboto: "Roboto", serif;
+  --font-shrikhand: "Shrikhand",serif;
+  --color-medium-purple:#9356DC;
+  --color-blush-pink:#FF79DA;
+  --color-morning-glory:#99E2D0;
+}
+
+header {
+  color: var(--color-morning-glory);
+  font-family: var(--font-shrikhand);
+}
+
+/*# sourceMappingURL=styles.css.map */
