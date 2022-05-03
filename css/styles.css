@@ -1,89 +1,62 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto");
 @import url("http://fonts.googleapis.com/css?family=Shrikhand");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 :root {
-  margin: 0px;
   font-family: "Roboto", serif;
   box-sizing: border-box;
-  --font-shrikhand: "Shrikhand",serif;
   --color-medium-purple:#9356DC;
   --color-blush-pink:#FF79DA;
   --color-morning-glory:#99E2D0;
   --color-grey:#eaeaea;
 }
 
-h2 {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
-
-body {
-  margin: 0px;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  padding: 0px;
-}
-
-header {
-  height: 60px;
-  box-shadow: 0px 10px 5px #4e4e4e;
-  display: flex;
-  justify-content: center;
-}
-header .logo {
-  margin-top: 21px;
-  height: 28px;
-  width: 164px;
-}
-
-.location {
-  height: 60px;
-  line-height: 60px;
-  display: flex;
-  justify-content: center;
-  background-color: var(--color-grey);
-}
-.location i {
-  margin-right: 5px;
-}
-
-.site-description {
-  height: 285px;
-  background-color: #f6f6f6;
-}
-.site-description h2 {
-  padding-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: bold;
-  font-size: 18px;
-  width: 165px;
-}
-.site-description p {
-  font-weight: lighter;
-  font-size: 16px;
-  text-align: center;
-}
-
-.restaurants {
-  padding: 20px;
-}
-
-.place {
-  width: 100%;
-}
-.place img {
-  max-width: 100%;
-}
-
-footer {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  background-color: #353535;
-  color: white;
-  margin: 0px;
-}
-footer p {
-  font-family: "Shrikhand", sans-serif;
-}
+/* Base */
+/* Layout */
+/* Components */
+/* Pages */
 
 /*# sourceMappingURL=styles.css.map */

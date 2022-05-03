@@ -1,3 +1,14 @@
-@import "partials/_fonts.scss";
-@import "partials/_variables.scss";
-@import "partials/_styles.scss";
+/* Base */
+@use "base/_reset";
+@use "base/_root";
+@use "base/_fonts";
+
+/* Layout */
+@use "layout/grid";
+
+/* Components */
+@use "components/buttons";
+
+/* Pages */
+@use "pages/menu";
+@use "pages/restaurants";
