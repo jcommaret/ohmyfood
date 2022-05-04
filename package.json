@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/jcommaret/ohmyfood/issues"
   },
-  "homepage": "https://github.com/jcommaret/ohmyfood#readme",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  }
+  "homepage": "https://github.com/jcommaret/ohmyfood#readme"
 }

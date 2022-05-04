@@ -1,7 +1,29 @@
 // Google Fonts
-@import url("http://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900");
 @import url("http://fonts.googleapis.com/css?family=Shrikhand");
-
 // Font Variables
 $roboto: 'Roboto', serif;   
 $shrikhand: 'Shrikhand', sans-serif;
+
+$large-font: 20px;
+$medium-font: 16px;
+$small-font: 12px;
+
+header{
+    .header-description{
+        &__heading{
+            font-size:$large-font;
+            font-weight: 900;
+        }
+        &__text{
+            font-size:$medium-font;
+            font-weight: 100;
+        }
+    }
+    .header-use{
+        &__heading{
+            font-size:$large-font;
+            font-weight: 900;
+        }
+    }
+}

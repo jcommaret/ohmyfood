@@ -1,0 +1,11 @@
+button{
+    border:none;
+    border-radius: 25px;
+    background: linear-gradient(var(--color-blush-pink), var(--color-medium-purple)); 
+    height:50px;
+    width:220px;
+    color:white;   
+    :hover{
+        background: blue;
+    }
+}

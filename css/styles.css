@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900");
 @import url("http://fonts.googleapis.com/css?family=Shrikhand");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -51,7 +51,113 @@ table {
   --color-medium-purple:#9356DC;
   --color-blush-pink:#FF79DA;
   --color-morning-glory:#99E2D0;
-  --color-grey:#eaeaea;
+  --color-grey-1:#eaeaea;
+  --color-grey-2:#F6F6F6;
+  --color-white:#FFF;
+}
+
+header .header-description__heading {
+  font-size: 20px;
+  font-weight: 900;
+}
+header .header-description__text {
+  font-size: 16px;
+  font-weight: 100;
+}
+header .header-use__heading {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+.header-location {
+  display: flex;
+  justify-content: center;
+}
+.header-description {
+  text-align: center;
+}
+.header-description__heading {
+  width: 200px;
+  padding-top: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+}
+.header-description__text {
+  width: 285px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 20px;
+}
+.header-description button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.header-nav {
+  height: 62px;
+}
+.header-nav__logo {
+  margin-top: 24px;
+}
+.header-location {
+  height: 61px;
+  background-color: var(--color-grey-1);
+}
+.header-description {
+  height: 287px;
+  background-color: var(--color-grey-2);
+}
+.header-use {
+  height: 440px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header-use__steps__button {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.restaurants {
+  height: 1127px;
+  padding: 20px;
+}
+.restaurants img {
+  max-height: 174px;
+  max-width: 100%;
+}
+
+footer {
+  height: 200px;
+}
+
+button {
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(var(--color-blush-pink), var(--color-medium-purple));
+  height: 50px;
+  width: 220px;
+  color: white;
+}
+button :hover {
+  background: blue;
+}
+
+.header-nav__logo {
+  width: 168px;
+  height: 28px;
+}
+
+.header-location {
+  line-height: 62px;
 }
 
 /* Base */

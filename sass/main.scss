@@ -5,9 +5,13 @@
 
 /* Layout */
 @use "layout/grid";
+@use "layout/blocks";
 
 /* Components */
 @use "components/buttons";
+@use "components/logo";
+@use "components/location";
+
 
 /* Pages */
 @use "pages/menu";
