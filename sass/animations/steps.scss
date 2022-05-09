@@ -1,0 +1,10 @@
+.animation-step { 
+    animation-name: FadeInBottom 
+}
+
+@keyframes FadeInBottom {
+    from {
+        opacity: 0;
+    }
+    to { opacity: 1 }
+}

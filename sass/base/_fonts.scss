@@ -9,11 +9,6 @@ $large-font: 20px;
 $medium-font: 16px;
 $small-font: 12px;
 
-
-i{
-    margin-left:10px;
-}
-
 header{
     .header-description{
         &__heading{
@@ -39,4 +34,8 @@ main{
             font-weight: 900;
         }
     }
+}
+footer{
+    font-family:$roboto;
+    font-weight: 400;
 }
