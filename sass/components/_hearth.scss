@@ -1,0 +1,8 @@
+.hearth{
+    width:32px;
+    height:32px;
+    background-image: url("../images/icons/heart-regular.svg");
+    &:hover{
+        background-image: url("../images/icons/heart-solid.svg");
+    }
+}

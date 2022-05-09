@@ -1,0 +1,110 @@
+.header{
+    &-nav{
+        height:62px;
+        &__logo{
+            margin-top:24px;
+        }
+    }
+    &-location{
+        height:61px;
+        background-color:var(--color-grey-1);
+    }
+    &-description{
+        height: 287px;
+        background-color:var(--color-grey-2);
+    }
+    &-use{
+        height:440px;
+        padding-top:50px;
+        padding-left:25px;
+        padding-right:25px;
+        &__heading{
+            margin-bottom:30px;
+        }
+        &__steps{
+            &__button{
+                height:50px;
+                display: flex;
+                flex-direction: row;
+                width:100%;
+            }       
+        }
+    }       
+}
+.restaurants{
+    background-color: #f6f6f6;
+    height:1127px;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    &__heading{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .place{
+        box-shadow: 0px 0px 20px -5px #999;
+        border-radius: 25px;
+        height:250px;
+        img{
+            width:100%;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        &__img{
+            max-width: 100%;
+            background-size:cover;
+            background-position: center center;
+            height: 174px;
+            object-fit: cover;
+        }
+        &_new{
+            margin-left:-80px;
+            margin-top: 10px;
+            position:absolute;
+            height: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 20px;
+            border-radius: 3px;
+            background-color: var(--color-light-green);
+            color:var(--color-dark-green);
+            font-size: 12px;
+        }
+        &__description{
+            margin-top: 15px;
+            margin-left: 15px;
+            font-size: 16px;
+            line-height:20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__heading{
+            font-weight: 900;
+        }
+        &__text{
+            font-weight: 100;
+        }
+        &__favorites{
+            i{
+                font-size: 30px;
+                
+            }
+        }
+    }
+}
+
+.footer{
+    padding: 25px;
+    background-color: #353535;
+    color:var(--color-white);
+    &__logo{
+        margin-bottom: 25px;
+    }
+    &__menu{
+        li{
+            line-height: 25px;
+        }
+    }
+}

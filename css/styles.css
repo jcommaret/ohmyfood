@@ -48,12 +48,25 @@ table {
 :root {
   font-family: "Roboto", serif;
   box-sizing: border-box;
+}
+
+i {
+  margin-left: 10px;
+}
+
+:root {
   --color-medium-purple:#9356DC;
   --color-blush-pink:#FF79DA;
   --color-morning-glory:#99E2D0;
   --color-grey-1:#eaeaea;
   --color-grey-2:#F6F6F6;
   --color-white:#FFF;
+  --color-dark-green:#008766;
+  --color-light-green:#99e2d0;
+}
+
+i {
+  margin-left: 10px;
 }
 
 header .header-description__heading {
@@ -65,6 +78,11 @@ header .header-description__text {
   font-weight: 100;
 }
 header .header-use__heading {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+main .restaurants__heading {
   font-size: 20px;
   font-weight: 900;
 }
@@ -116,8 +134,11 @@ header .header-use__heading {
 .header-use {
   height: 440px;
   padding-top: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.header-use__heading {
+  margin-bottom: 30px;
 }
 .header-use__steps__button {
   height: 50px;
@@ -127,37 +148,162 @@ header .header-use__heading {
 }
 
 .restaurants {
+  background-color: #f6f6f6;
   height: 1127px;
-  padding: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.restaurants img {
-  max-height: 174px;
+.restaurants__heading {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.restaurants .place {
+  box-shadow: 0px 0px 20px -5px #999;
+  border-radius: 25px;
+  height: 250px;
+}
+.restaurants .place img {
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.restaurants .place__img {
   max-width: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 174px;
+  object-fit: cover;
+}
+.restaurants .place_new {
+  margin-left: -80px;
+  margin-top: 10px;
+  position: absolute;
+  height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 20px;
+  border-radius: 3px;
+  background-color: var(--color-light-green);
+  color: var(--color-dark-green);
+  font-size: 12px;
+}
+.restaurants .place__description {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurants .place__heading {
+  font-weight: 900;
+}
+.restaurants .place__text {
+  font-weight: 100;
+}
+.restaurants .place__favorites i {
+  font-size: 30px;
 }
 
-footer {
-  height: 200px;
+.footer {
+  padding: 25px;
+  background-color: #353535;
+  color: var(--color-white);
+}
+.footer__logo {
+  margin-bottom: 25px;
+}
+.footer__menu li {
+  line-height: 25px;
 }
 
 button {
   border: none;
   border-radius: 25px;
   background: linear-gradient(var(--color-blush-pink), var(--color-medium-purple));
+  box-shadow: 0px 0px 20px -5px #999;
   height: 50px;
   width: 220px;
   color: white;
 }
-button :hover {
-  background: blue;
+button:hover {
+  background: linear-gradient(var(--color-blush-pink), var(--color-medium-purple));
+  opacity: 0.75;
+  cursor: pointer;
 }
 
-.header-nav__logo {
-  width: 168px;
-  height: 28px;
+.header-use__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.header-use__steps__button {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  line-height: 80px;
+  background-color: var(--color-grey-2);
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px -5px #999;
+}
+.header-use__steps__button i {
+  margin-top: 30px;
+  color: #999;
+}
+.header-use__steps__button:hover {
+  background-color: #f5edff;
+}
+.header-use__steps__button:hover i {
+  color: var(--color-medium-purple);
+}
+.header-use__steps__number {
+  height: 20px;
+  width: 20px;
+  color: white;
+  background-color: var(--color-medium-purple);
+  border-radius: 12px;
+  margin-top: 28px;
+  margin-left: -10px;
+}
+.header-use__steps__number span {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+.header__logo {
+  color: black;
+  font-family: "Shrikhand";
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.footer__logo {
+  color: white;
+  font-family: "Shrikhand";
 }
 
 .header-location {
   line-height: 62px;
+}
+
+i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hearth {
+  width: 32px;
+  height: 32px;
+  background-image: url("../images/icons/heart-regular.svg");
+}
+.hearth:hover {
+  background-image: url("../images/icons/heart-solid.svg");
 }
 
 /* Base */

@@ -9,6 +9,11 @@ $large-font: 20px;
 $medium-font: 16px;
 $small-font: 12px;
 
+
+i{
+    margin-left:10px;
+}
+
 header{
     .header-description{
         &__heading{
@@ -21,6 +26,14 @@ header{
         }
     }
     .header-use{
+        &__heading{
+            font-size:$large-font;
+            font-weight: 900;
+        }
+    }
+}
+main{
+    .restaurants{
         &__heading{
             font-size:$large-font;
             font-weight: 900;
