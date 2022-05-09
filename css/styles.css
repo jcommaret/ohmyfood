@@ -61,6 +61,11 @@ table {
   --color-light-green:#99e2d0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 header .header-description__heading {
   font-size: 20px;
   font-weight: 900;
@@ -77,6 +82,12 @@ header .header-use__heading {
 main .restaurants__heading {
   font-size: 20px;
   font-weight: 900;
+}
+
+.menu__heading {
+  font-weight: 900;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 25px;
 }
 
 footer {
@@ -114,6 +125,10 @@ footer {
   margin-bottom: 40px;
 }
 
+main {
+  padding: 25px;
+}
+
 .header-nav {
   height: 62px;
 }
@@ -144,69 +159,34 @@ footer {
   width: 100%;
 }
 
-.restaurants {
-  background-color: #f6f6f6;
-  height: 1127px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.header-nav {
+  height: 62px;
 }
-.restaurants__heading {
-  margin-top: 50px;
-  margin-bottom: 10px;
+.header-nav__logo {
+  margin-top: 24px;
 }
-.restaurants .place {
-  box-shadow: 0px 0px 20px -5px #999;
-  border-radius: 25px;
-  height: 250px;
+.header-location {
+  height: 61px;
+  background-color: var(--color-grey-1);
 }
-.restaurants .place img {
-  width: 100%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+.header-description {
+  height: 287px;
+  background-color: var(--color-grey-2);
 }
-.restaurants .place__img {
-  max-width: 100%;
-  background-size: cover;
-  background-position: center center;
-  height: 174px;
-  object-fit: cover;
+.header-use {
+  height: 440px;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
-.restaurants .place_new {
-  margin-left: -80px;
-  margin-top: 10px;
-  position: absolute;
-  height: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  line-height: 20px;
-  border-radius: 3px;
-  background-color: var(--color-light-green);
-  color: var(--color-dark-green);
-  font-size: 12px;
+.header-use__heading {
+  margin-bottom: 30px;
 }
-.restaurants .place__description {
-  margin-top: 15px;
-  margin-left: 15px;
-  font-size: 16px;
-  line-height: 20px;
+.header-use__steps__button {
+  height: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-.restaurants .place__heading {
-  font-weight: 900;
-}
-.restaurants .place__text {
-  font-weight: 100;
-}
-.restaurants .place__favorites i {
-  font-size: 30px;
-}
-
-.hearth {
-  margin-right: 10px;
+  width: 100%;
 }
 
 .footer {
@@ -303,6 +283,7 @@ footer i {
 }
 
 .hearth {
+  margin-right: 10px;
   width: 32px;
   height: 32px;
   background-image: url("../images/icons/heart-regular.svg");
@@ -323,6 +304,86 @@ footer i {
     opacity: 1;
   }
 }
+.header-cover img {
+  width: 100%;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.food .plat {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 20px -5px #999;
+  border-radius: 25px;
+  height: 70px;
+  font-size: 20px;
+}
+.food .plat :first-child p:first-of-type {
+  font-weight: 900;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restaurants__heading {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.restaurants .place {
+  box-shadow: 0px 0px 20px -5px #999;
+  border-radius: 25px;
+  height: 250px;
+}
+.restaurants .place img {
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.restaurants .place__img {
+  max-width: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 174px;
+  object-fit: cover;
+}
+.restaurants .place_new {
+  margin-left: -80px;
+  margin-top: 10px;
+  position: absolute;
+  height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 20px;
+  border-radius: 3px;
+  background-color: var(--color-light-green);
+  color: var(--color-dark-green);
+  font-size: 12px;
+}
+.restaurants .place__description {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurants .place__heading {
+  font-weight: 900;
+}
+.restaurants .place__text {
+  font-weight: 100;
+}
+.restaurants .place__favorites i {
+  font-size: 30px;
+}
+
 /* Base */
 /* Layout */
 /* Components */

@@ -1,0 +1,14 @@
+
+.footer{
+    padding: 25px;
+    background-color: #353535;
+    color:var(--color-white);
+    &__logo{
+        margin-bottom: 25px;
+    }
+    &__menu{
+        li{
+            line-height: 25px;
+        }
+    }
+}

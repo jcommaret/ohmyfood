@@ -8,6 +8,9 @@
 @use "layout/_grid";
 @use "layout/_blocks";
 
+@use "layout/_header";
+@use "layout/_footer";
+
 /* Components */
 @use "components/_buttons";
 @use "components/_logo";

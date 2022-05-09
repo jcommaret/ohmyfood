@@ -9,6 +9,11 @@ $large-font: 20px;
 $medium-font: 16px;
 $small-font: 12px;
 
+a{
+    text-decoration: none;
+    color:black;
+}
+
 header{
     .header-description{
         &__heading{
@@ -35,6 +40,16 @@ main{
         }
     }
 }
+
+.menu{
+    &__heading{
+        font-weight: 900;
+        font-family: $shrikhand;
+        font-size:25px;
+        
+    }
+}
+
 footer{
     font-family:$roboto;
     font-weight: 400;
