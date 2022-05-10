@@ -1,6 +1,7 @@
 @use "../utils/variables" as v; 
 
 .restaurants{
+    padding:25px;
     background-color: v.$grey-2;
     @include v.flex-col;
     gap:20px;

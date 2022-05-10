@@ -1,8 +1,5 @@
 @use "../utils/variables" as v; 
 
-main{
-    padding:25px;
-}
 .header{
     &-nav{
         height:62px;
@@ -28,8 +25,8 @@ main{
         }
         &__steps{
             &__button{
-                height:50px;
                 @include v.flex-row;
+                height:50px;
                 width:100%;
             }       
         }

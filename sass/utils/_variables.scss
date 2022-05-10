@@ -52,7 +52,7 @@ $dark-green:#008766;
     flex-direction: column;
 }
 
-@mixin flex-row{
+@mixin flex-row {
     @include flex();
     flex-direction: row;
 }

@@ -114,10 +114,6 @@ footer {
   margin-bottom: 40px;
 }
 
-main {
-  padding: 25px;
-}
-
 .header-nav {
   height: 62px;
 }
@@ -142,9 +138,9 @@ main {
   margin-bottom: 30px;
 }
 .header-use__steps__button {
-  height: 50px;
   display: flex;
   flex-direction: row;
+  height: 50px;
   width: 100%;
 }
 
@@ -286,10 +282,28 @@ footer i {
   width: 100%;
 }
 
+.menu {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: #F6F6F6;
+  margin-top: -25px;
+  position: absolute;
+  width: 100%;
+}
+.menu__heading {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
 .food {
+  padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+.food h3 {
+  margin-top: 45px;
+  text-transform: uppercase;
 }
 .food .plat {
   display: flex;
@@ -297,14 +311,23 @@ footer i {
   justify-content: space-between;
   box-shadow: 0px 0px 20px -5px #999;
   border-radius: 25px;
+  align-items: center;
   height: 70px;
   font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 20px;
 }
 .food .plat :first-child p:first-of-type {
   font-weight: 900;
 }
+.food .plat .price {
+  margin-top: 25px;
+  font-weight: 900;
+}
 
 .restaurants {
+  padding: 25px;
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
@@ -363,18 +386,6 @@ footer i {
   font-size: 30px;
 }
 
-.animation-step {
-  animation-name: FadeInBottom;
-}
-
-@keyframes FadeInBottom {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* Base */
 /* Layout */
 /* Components */
