@@ -21,6 +21,13 @@ header{
             font-size: v.$large-font;
             font-weight: v.$bold;
         }
+        &__steps{
+            &__number{
+                span{
+                    font-size: v.$small-font;
+                }
+            }
+        }
     }
 }
 main{
@@ -36,14 +43,12 @@ main{
     &__heading{
         font-weight: v.$bold;
         font-family: v.$shrikhand;
-        font-size:v.$xlarge;
+        font-size: v.$xlarge;
         
     }
 }
 
 footer{
-    font-family:v.$roboto;
+    font-family: v.$roboto;
     font-weight: v.$normal;
 }
-
-

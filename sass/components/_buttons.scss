@@ -3,13 +3,13 @@
 button{
     border:none;
     border-radius: 25px;
-    background: linear-gradient( v.$pink, v.$purple); 
-    box-shadow: 0px 0px 20px -5px #999;
+    background: v.$gradient; 
+    box-shadow: v.$shadow;
     height:50px;
     width:220px;
     color: v.$white;   
     &:hover{
-        background: linear-gradient(v.$pink, v.$purple); 
+        background: v.$gradient; 
         opacity: 0.75;
         cursor: pointer;
     }
@@ -29,7 +29,7 @@ button{
                 line-height: 80px;
                 background-color: v.$grey-2;
                 border-radius: 25px;
-                box-shadow: 0px 0px 20px -5px v.$grey-3;;
+                box-shadow: v.$shadow;
                 i{
                     margin-top: 30px;
                     color:v.$grey-3;
@@ -43,10 +43,10 @@ button{
                 }
             }       
             &__number{
-                height:20px;
-                width:20px;
                 color:v.$white;
                 background-color: v.$purple;
+                height:20px;
+                width:20px;
                 border-radius:12px;
                 margin-top: 28px;
                 margin-left: -10px;
