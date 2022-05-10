@@ -1,14 +1,16 @@
+@use "../utils/variables" as v;  
+
 .header{
     &__logo{
-        color:black;
-        font-family: "Shrikhand";
+        color:v.$black;
+        font-family: v.$shrikhand;
         font-size:32px;
         margin-top: 20px;
     }
 }
 .footer{
     &__logo{
-        color:white;
-        font-family: "Shrikhand";
+        color:v.$white;
+        font-family: v.$shrikhand;
     }
 }

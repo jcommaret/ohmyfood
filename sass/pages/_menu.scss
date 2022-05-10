@@ -1,3 +1,5 @@
+@use "../utils/variables" as v; 
+
 .header-cover{
     img{
         width: 100%;
@@ -10,12 +12,12 @@
     .plat{
         display: flex;
         flex-direction: row;
-        box-shadow: 0px 0px 20px -5px #999;
+        box-shadow: 0px 0px 20px -5px v.$grey-3;
         border-radius: 25px;
         height:70px;
         font-size: 20px;
         :first-child p:first-of-type{
-            font-weight: 900;
+            font-weight: v.$bold;
         }
     }
 }

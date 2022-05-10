@@ -1,13 +1,15 @@
+@use "../utils/variables" as v; 
+
 button{
     border:none;
     border-radius: 25px;
-    background: linear-gradient(var(--color-blush-pink), var(--color-medium-purple)); 
+    background: linear-gradient( v.$pink, v.$purple); 
     box-shadow: 0px 0px 20px -5px #999;
     height:50px;
     width:220px;
-    color:white;   
+    color: v.$white;   
     &:hover{
-        background: linear-gradient(var(--color-blush-pink), var(--color-medium-purple)); 
+        background: linear-gradient(v.$pink, v.$purple); 
         opacity: 0.75;
         cursor: pointer;
     }
@@ -25,17 +27,17 @@ button{
                 flex-direction: row;
                 width:100%;
                 line-height: 80px;
-                background-color:var(--color-grey-2);
+                background-color: v.$grey-2;
                 border-radius: 25px;
-                box-shadow: 0px 0px 20px -5px #999;
+                box-shadow: 0px 0px 20px -5px v.$grey-3;;
                 i{
                     margin-top: 30px;
-                    color:#999;
+                    color:v.$grey-3;
                 }
                 &:hover{
-                    background-color: #f5edff;
+                    background-color: v.$bg-steps-hover;
                     i{
-                        color: var(--color-medium-purple);
+                        color: v.$purple;
                     }
                     
                 }
@@ -43,8 +45,8 @@ button{
             &__number{
                 height:20px;
                 width:20px;
-                color:white;
-                background-color: var(--color-medium-purple);
+                color:v.$white;
+                background-color: v.$purple;
                 border-radius:12px;
                 margin-top: 28px;
                 margin-left: -10px;

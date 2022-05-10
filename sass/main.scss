@@ -1,26 +1,24 @@
 /* Base */
-@use "base/_reset";
-@use "base/_root";
-@use "base/_colors";
-@use "base/_fonts";
+@use "base/reset";
+@use "base/fonts";
 
 /* Layout */
-@use "layout/_grid";
-@use "layout/_blocks";
+@use "layout/grid";
+@use "layout/blocks";
 
-@use "layout/_header";
-@use "layout/_footer";
+@use "layout/header";
+@use "layout/footer";
 
 /* Components */
-@use "components/_buttons";
-@use "components/_logo";
-@use "components/_location";
-@use "components/_icons";
-@use "components/_hearth";
+@use "components/root";
+@use "components/buttons";
+@use "components/logo";
+@use "components/icons";
+@use "components/hearth";
+
+/* Pages */
+@use "pages/menu";
+@use "pages/restaurants";
 
 /* Animations */
 @use "animations/steps.scss";
-
-/* Pages */
-@use "pages/_menu";
-@use "pages/_restaurants";

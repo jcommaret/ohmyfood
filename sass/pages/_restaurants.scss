@@ -1,5 +1,7 @@
+@use "../utils/variables" as v; 
+
 .restaurants{
-    background-color: #f6f6f6;
+    background-color: v.$grey-2;
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -8,7 +10,7 @@
         margin-bottom: 10px;
     }
     .place{
-        box-shadow: 0px 0px 20px -5px #999;
+        box-shadow: 0px 0px 20px -5px v.$grey-3;
         border-radius: 25px;
         height:250px;
         img{
@@ -32,8 +34,8 @@
             padding-right: 10px;
             line-height: 20px;
             border-radius: 3px;
-            background-color: var(--color-light-green);
-            color:var(--color-dark-green);
+            background-color: v.$light-green;
+            color:v.$dark-green;
             font-size: 12px;
         }
         &__description{
@@ -46,10 +48,10 @@
             justify-content: space-between;
         }
         &__heading{
-            font-weight: 900;
+            font-weight: v.$bold;
         }
         &__text{
-            font-weight: 100;
+            font-weight: v.$light;
         }
         &__favorites{
             i{

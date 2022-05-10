@@ -1,56 +1,49 @@
-// Google Fonts
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900");
-@import url("http://fonts.googleapis.com/css?family=Shrikhand");
-// Font Variables
-$roboto: 'Roboto', serif;   
-$shrikhand: 'Shrikhand', sans-serif;
-
-$large-font: 20px;
-$medium-font: 16px;
-$small-font: 12px;
+@use "../utils/variables" as v; 
 
 a{
     text-decoration: none;
-    color:black;
+    color:v.$black;
 }
 
 header{
     .header-description{
         &__heading{
-            font-size:$large-font;
-            font-weight: 900;
+            font-size: v.$large-font;
+            font-weight: v.$bold;
         }
         &__text{
-            font-size:$medium-font;
-            font-weight: 100;
+            font-size: v.$medium-font;
+            font-weight: v.$light;
         }
     }
     .header-use{
         &__heading{
-            font-size:$large-font;
-            font-weight: 900;
+            font-size: v.$large-font;
+            font-weight: v.$bold;
         }
     }
 }
 main{
     .restaurants{
         &__heading{
-            font-size:$large-font;
-            font-weight: 900;
+            font-size: v.$large-font;
+            font-weight: v.$bold;
         }
     }
 }
 
 .menu{
     &__heading{
-        font-weight: 900;
-        font-family: $shrikhand;
-        font-size:25px;
+        font-weight: v.$bold;
+        font-family: v.$shrikhand;
+        font-size:v.$xlarge;
         
     }
 }
 
 footer{
-    font-family:$roboto;
-    font-weight: 400;
+    font-family:v.$roboto;
+    font-weight: v.$normal;
 }
+
+

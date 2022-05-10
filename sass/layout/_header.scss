@@ -1,3 +1,5 @@
+@use "../utils/variables" as v; 
+
 .header{
     &-nav{
         height:62px;
@@ -6,12 +8,13 @@
         }
     }
     &-location{
-        height:61px;
-        background-color:var(--color-grey-1);
+        height:62px;
+        background-color:v.$grey-1;
+        line-height: 62px;
     }
     &-description{
         height: 287px;
-        background-color:var(--color-grey-2);
+        background-color:v.$grey-2;
     }
     &-use{
         height:440px;

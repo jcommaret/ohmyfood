@@ -1,3 +1,5 @@
+@use "../utils/variables" as v; 
+
 main{
     padding:25px;
 }
@@ -10,11 +12,11 @@ main{
     }
     &-location{
         height:61px;
-        background-color:var(--color-grey-1);
+        background-color:v.$grey-1;
     }
     &-description{
         height: 287px;
-        background-color:var(--color-grey-2);
+        background-color:v.$grey-2;
     }
     &-use{
         height:440px;

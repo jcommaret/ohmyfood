@@ -45,25 +45,9 @@ table {
   border-spacing: 0;
 }
 
-:root {
-  font-family: "Roboto", serif;
-  box-sizing: border-box;
-}
-
-:root {
-  --color-medium-purple:#9356DC;
-  --color-blush-pink:#FF79DA;
-  --color-morning-glory:#99E2D0;
-  --color-grey-1:#eaeaea;
-  --color-grey-2:#F6F6F6;
-  --color-white:#FFF;
-  --color-dark-green:#008766;
-  --color-light-green:#99e2d0;
-}
-
 a {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 header .header-description__heading {
@@ -137,11 +121,11 @@ main {
 }
 .header-location {
   height: 61px;
-  background-color: var(--color-grey-1);
+  background-color: #eaeaea;
 }
 .header-description {
   height: 287px;
-  background-color: var(--color-grey-2);
+  background-color: #F6F6F6;
 }
 .header-use {
   height: 440px;
@@ -166,12 +150,13 @@ main {
   margin-top: 24px;
 }
 .header-location {
-  height: 61px;
-  background-color: var(--color-grey-1);
+  height: 62px;
+  background-color: #eaeaea;
+  line-height: 62px;
 }
 .header-description {
   height: 287px;
-  background-color: var(--color-grey-2);
+  background-color: #F6F6F6;
 }
 .header-use {
   height: 440px;
@@ -192,7 +177,7 @@ main {
 .footer {
   padding: 25px;
   background-color: #353535;
-  color: var(--color-white);
+  color: #FFF;
 }
 .footer__logo {
   margin-bottom: 25px;
@@ -201,17 +186,21 @@ main {
   line-height: 25px;
 }
 
+:root {
+  font-family: "Roboto", serif;
+}
+
 button {
   border: none;
   border-radius: 25px;
-  background: linear-gradient(var(--color-blush-pink), var(--color-medium-purple));
+  background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 0px 20px -5px #999;
   height: 50px;
   width: 220px;
-  color: white;
+  color: #FFF;
 }
 button:hover {
-  background: linear-gradient(var(--color-blush-pink), var(--color-medium-purple));
+  background: linear-gradient(#FF79DA, #9356DC);
   opacity: 0.75;
   cursor: pointer;
 }
@@ -227,7 +216,7 @@ button:hover {
   flex-direction: row;
   width: 100%;
   line-height: 80px;
-  background-color: var(--color-grey-2);
+  background-color: #F6F6F6;
   border-radius: 25px;
   box-shadow: 0px 0px 20px -5px #999;
 }
@@ -239,13 +228,13 @@ button:hover {
   background-color: #f5edff;
 }
 .header-use__steps__button:hover i {
-  color: var(--color-medium-purple);
+  color: #9356DC;
 }
 .header-use__steps__number {
   height: 20px;
   width: 20px;
-  color: white;
-  background-color: var(--color-medium-purple);
+  color: #FFF;
+  background-color: #9356DC;
   border-radius: 12px;
   margin-top: 28px;
   margin-left: -10px;
@@ -258,19 +247,15 @@ button:hover {
 }
 
 .header__logo {
-  color: black;
-  font-family: "Shrikhand";
+  color: #000;
+  font-family: "Shrikhand", sans-serif;
   font-size: 32px;
   margin-top: 20px;
 }
 
 .footer__logo {
-  color: white;
-  font-family: "Shrikhand";
-}
-
-.header-location {
-  line-height: 62px;
+  color: #FFF;
+  font-family: "Shrikhand", sans-serif;
 }
 
 header i {
@@ -292,18 +277,6 @@ footer i {
   background-image: url("../images/icons/heart-solid.svg");
 }
 
-.animation-step {
-  animation-name: FadeInBottom;
-}
-
-@keyframes FadeInBottom {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .header-cover img {
   width: 100%;
 }
@@ -326,7 +299,7 @@ footer i {
 }
 
 .restaurants {
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -361,8 +334,8 @@ footer i {
   padding-right: 10px;
   line-height: 20px;
   border-radius: 3px;
-  background-color: var(--color-light-green);
-  color: var(--color-dark-green);
+  background-color: #99E2D0;
+  color: #008766;
   font-size: 12px;
 }
 .restaurants .place__description {
@@ -384,10 +357,22 @@ footer i {
   font-size: 30px;
 }
 
+.animation-step {
+  animation-name: FadeInBottom;
+}
+
+@keyframes FadeInBottom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* Base */
 /* Layout */
 /* Components */
-/* Animations */
 /* Pages */
+/* Animations */
 
 /*# sourceMappingURL=styles.css.map */
