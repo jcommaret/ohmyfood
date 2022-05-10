@@ -1,26 +1,24 @@
+@use "../utils/variables" as v; 
+
 .header{
     &-nav{
-        display: flex;
-        justify-content: center;
+        @include v.flex-row-center;
     }
     &-location{
-        display: flex;
-        justify-content: center;
+        @include v.flex-row-center;
     }
     &-description{
         text-align: center;        
         &__heading{
+            @include v.margin-auto;
             width: 200px;
             padding-top:42px;
-            margin-left: auto;
-            margin-right: auto;
             line-height:30px;
         }
         &__text{
+            @include v.margin-auto;
             width: 285px;
             margin-top:20px;
-            margin-left: auto;
-            margin-right: auto;
             line-height:20px;
         }
         button{

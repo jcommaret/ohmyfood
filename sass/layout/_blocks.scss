@@ -29,8 +29,7 @@ main{
         &__steps{
             &__button{
                 height:50px;
-                display: flex;
-                flex-direction: row;
+                @include v.flex-row;
                 width:100%;
             }       
         }

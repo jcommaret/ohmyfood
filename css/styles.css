@@ -72,8 +72,8 @@ main .restaurants__heading {
 }
 
 .menu__heading {
-  font-weight: 900;
   font-family: "Shrikhand", sans-serif;
+  font-weight: 900;
   font-size: 25px;
 }
 
@@ -84,27 +84,29 @@ footer {
 
 .header-nav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 .header-location {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 .header-description {
   text-align: center;
 }
 .header-description__heading {
-  width: 200px;
-  padding-top: 42px;
   margin-left: auto;
   margin-right: auto;
+  width: 200px;
+  padding-top: 42px;
   line-height: 30px;
 }
 .header-description__text {
-  width: 285px;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  width: 285px;
+  margin-top: 20px;
   line-height: 20px;
 }
 .header-description button {
@@ -153,13 +155,13 @@ main {
   margin-top: 24px;
 }
 .header-location {
-  height: 62px;
   background-color: #eaeaea;
+  height: 62px;
   line-height: 62px;
 }
 .header-description {
-  height: 287px;
   background-color: #F6F6F6;
+  height: 287px;
 }
 .header-use {
   height: 440px;
@@ -171,9 +173,9 @@ main {
   margin-bottom: 30px;
 }
 .header-use__steps__button {
-  height: 50px;
   display: flex;
   flex-direction: row;
+  height: 50px;
   width: 100%;
 }
 
@@ -198,9 +200,9 @@ button {
   border-radius: 25px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 0px 20px -5px #999;
+  color: #FFF;
   height: 50px;
   width: 220px;
-  color: #FFF;
 }
 button:hover {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -214,18 +216,18 @@ button:hover {
   gap: 25px;
 }
 .header-use__steps__button {
-  height: 80px;
   display: flex;
   flex-direction: row;
+  box-shadow: 0px 0px 20px -5px #999;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+  height: 80px;
   width: 100%;
   line-height: 80px;
-  background-color: #F6F6F6;
-  border-radius: 25px;
-  box-shadow: 0px 0px 20px -5px #999;
 }
 .header-use__steps__button i {
-  margin-top: 30px;
   color: #999;
+  margin-top: 30px;
 }
 .header-use__steps__button:hover {
   background-color: #f5edff;
@@ -234,11 +236,11 @@ button:hover {
   color: #9356DC;
 }
 .header-use__steps__number {
+  border-radius: 12px;
   color: #FFF;
   background-color: #9356DC;
   height: 20px;
   width: 20px;
-  border-radius: 12px;
   margin-top: 28px;
   margin-left: -10px;
 }
@@ -292,6 +294,7 @@ footer i {
 .food .plat {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   box-shadow: 0px 0px 20px -5px #999;
   border-radius: 25px;
   height: 70px;
@@ -318,8 +321,8 @@ footer i {
 }
 .restaurants .place img {
   width: 100%;
-  border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
 }
 .restaurants .place__img {
   max-width: 100%;

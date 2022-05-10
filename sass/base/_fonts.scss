@@ -30,6 +30,7 @@ header{
         }
     }
 }
+
 main{
     .restaurants{
         &__heading{
@@ -41,10 +42,9 @@ main{
 
 .menu{
     &__heading{
-        font-weight: v.$bold;
         font-family: v.$shrikhand;
+        font-weight: v.$bold;
         font-size: v.$xlarge;
-        
     }
 }
 

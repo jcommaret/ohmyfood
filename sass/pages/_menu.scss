@@ -6,14 +6,12 @@
     }
 }
 .food{
-    display: flex;
-    flex-direction: column;
+    @include v.flex-col;
     gap:12px;
     .plat{
-        display: flex;
-        flex-direction: row;
-        box-shadow: v.$shadow;
-        border-radius: v.$radius;
+        @include v.flex-row-sb;
+        @include v.shadow;
+        @include v.rounded;
         height:70px;
         font-size: 20px;
         :first-child p:first-of-type{

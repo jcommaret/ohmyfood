@@ -8,13 +8,13 @@
         }
     }
     &-location{
-        height:62px;
         background-color:v.$grey-1;
+        height:62px;
         line-height: 62px;
     }
     &-description{
-        height: 287px;
         background-color:v.$grey-2;
+        height: 287px;
     }
     &-use{
         height:440px;
@@ -26,9 +26,8 @@
         }
         &__steps{
             &__button{
+                @include v.flex-row;
                 height:50px;
-                display: flex;
-                flex-direction: row;
                 width:100%;
             }       
         }

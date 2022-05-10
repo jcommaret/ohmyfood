@@ -2,14 +2,14 @@
 
 button{
     border:none;
-    border-radius: 25px;
-    background: v.$gradient; 
-    box-shadow: v.$shadow;
+    @include v.rounded;
+    @include v.gradient; 
+    @include v.shadow;
+    color: v.$white; 
     height:50px;
-    width:220px;
-    color: v.$white;   
+    width:220px;  
     &:hover{
-        background: v.$gradient; 
+        @include v.gradient; 
         opacity: 0.75;
         cursor: pointer;
     }
@@ -18,21 +18,19 @@ button{
 .header{
     &-use{
         &__steps{
-            display:flex;
-            flex-direction: column;
+            @include v.flex-col;
             gap:25px;
             &__button{
+                @include v.flex-row;
+                @include v.shadow;
+                @include v.rounded;
+                background-color: v.$grey-2;
                 height:80px;
-                display: flex;
-                flex-direction: row;
                 width:100%;
                 line-height: 80px;
-                background-color: v.$grey-2;
-                border-radius: 25px;
-                box-shadow: v.$shadow;
                 i{
-                    margin-top: 30px;
                     color:v.$grey-3;
+                    margin-top: 30px;
                 }
                 &:hover{
                     background-color: v.$bg-steps-hover;
@@ -43,11 +41,11 @@ button{
                 }
             }       
             &__number{
+                @include v.rounded(12px);
                 color:v.$white;
                 background-color: v.$purple;
                 height:20px;
                 width:20px;
-                border-radius:12px;
                 margin-top: 28px;
                 margin-left: -10px;
                 span{
