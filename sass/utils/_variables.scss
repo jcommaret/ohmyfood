@@ -74,7 +74,7 @@ $dark-green:#008766;
 
 @mixin fadeInAnimation{
     animation-delay: 3s;
-    animation:fadeIn 3s;
+    animation:fadeIn 3s linear;
     animation-fill-mode: forwards;
 }
 

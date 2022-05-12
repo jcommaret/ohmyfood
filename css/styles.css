@@ -297,12 +297,12 @@ footer i {
   margin-right: 10px;
   width: 32px;
   height: 32px;
-  background-image: url("../images/icons/heart-regular.svg");
+  background-image: url("../images/icons/heart-regular.png");
   transition-property: background-image;
   transition-duration: 0.5s;
 }
 .hearth:hover {
-  background-image: url("../images/icons/heart-solid.svg");
+  background-image: url("../images/icons/heart-full.png");
 }
 
 .header-cover img {
@@ -461,7 +461,7 @@ footer i {
 }
 .plat {
   animation-delay: 3s;
-  animation: fadeIn 3s;
+  animation: fadeIn 3s linear;
   animation-fill-mode: forwards;
 }
 
