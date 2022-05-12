@@ -8,14 +8,16 @@
 
 .menu{
     @include v.top-rounded;
-    &__heading{
-        margin-left:25px;
-        margin-top:25px;
-    }
     background-color:v.$grey-2;
     margin-top: -25px;
     position:absolute;
     width: calc(100%);
+    &__head{
+        @include v.flex-row-sb;
+        margin-top:25px;
+        padding-left:20px;
+        margin-right: 15px;
+    }
 }
 
 .food{

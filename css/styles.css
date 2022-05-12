@@ -297,12 +297,12 @@ footer i {
   margin-right: 10px;
   width: 32px;
   height: 32px;
-  background-image: url("../images/icons/heart-regular.png");
+  background-image: url("../../images/icons/coeur-regular.png");
   transition-property: background-image;
   transition-duration: 0.5s;
 }
 .hearth:hover {
-  background-image: url("../images/icons/heart-full.png");
+  background-image: url("../../images/icons/coeur-full.png");
 }
 
 .header-cover img {
@@ -317,9 +317,13 @@ footer i {
   position: absolute;
   width: 100%;
 }
-.menu__heading {
-  margin-left: 25px;
+.menu__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 25px;
+  padding-left: 20px;
+  margin-right: 15px;
 }
 
 .food {
