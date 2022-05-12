@@ -1,0 +1,37 @@
+@use "../utils/variables" as v; 
+
+.loader {
+    @include v.flex-col;
+    position: absolute;
+    z-index:1000;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    @include v.gradient;
+    animation: hideAnimation 0s ease-in 3s;
+    animation-fill-mode: forwards;
+    .load{
+        margin:auto;
+        @include v.flex-col;
+        justify-content: center;
+    }
+    i{
+        font-size: 168px;   
+        text-align: center;
+        color:#FFF;
+    }
+    p{
+        margin-top:40px;
+        font-family: v.$shrikhand;
+        font-size: 48px;
+        text-align: center;
+        color:#FFF;
+    }
+}
+
+@keyframes hideAnimation {
+to {
+    width: 0%;
+    height:0%;
+    }
+}

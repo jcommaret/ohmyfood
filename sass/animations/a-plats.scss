@@ -1,0 +1,6 @@
+@use "../utils/variables" as v; 
+
+.plat{
+    @include v.fadeInAnimation;
+}
+

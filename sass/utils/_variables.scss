@@ -31,7 +31,7 @@ $dark-green:#008766;
 }
 
 @mixin gradient ($gradient : linear-gradient($pink, $purple)){
-    background: $gradient;
+    background-image: $gradient;
 }
 
 @mixin rounded($radius:25px) {
@@ -70,4 +70,15 @@ $dark-green:#008766;
 @mixin margin-auto {
     margin-left: auto;
     margin-right: auto;
+}
+
+@mixin fadeInAnimation{
+    animation-delay: 3s;
+    animation:fadeIn 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; margin-top :10px;}
+      to { opacity: 1; margin-top :0px; }
 }

@@ -3,6 +3,8 @@
     width:32px;
     height:32px;
     background-image: url("../images/icons/heart-regular.svg");
+    transition-property: background-image;
+    transition-duration: 0.5s;
     &:hover{
         background-image: url("../images/icons/heart-solid.svg");
     }

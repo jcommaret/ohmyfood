@@ -14,8 +14,24 @@ button{
         cursor: pointer;
     }
 }
-
 .header{
+    &-description{
+        &__button{
+            border:none;
+            @include v.rounded;
+            @include v.gradient; 
+            @include v.shadow;
+            color: v.$white; 
+            height:50px;
+            width:220px;  
+            opacity: 1;
+            &:hover{
+                @include v.gradient; 
+                opacity: 0.75;
+                cursor: pointer;
+            }
+        }
+    }
     &-use{
         &__steps{
             @include v.flex-col;
