@@ -1,30 +1,31 @@
-@use "../utils/variables" as v; 
+@use "../utils/fonts" as f;
+@use "../utils/colors" as c; 
 
 a{
     text-decoration: none;
-    color:v.$black;
+    color: c.$black;
 }
 
 header{
     .header-description{
         &__heading{
-            font-size: v.$large-font;
-            font-weight: v.$bold;
+            font-size: f.$large-font;
+            font-weight: f.$bold;
         }
         &__text{
-            font-size: v.$medium-font;
-            font-weight: v.$light;
+            font-size: f.$medium-font;
+            font-weight: f.$light;
         }
     }
     .header-use{
         &__heading{
-            font-size: v.$large-font;
-            font-weight: v.$bold;
+            font-size: f.$large-font;
+            font-weight: f.$bold;
         }
         &__steps{
             &__number{
                 span{
-                    font-size: v.$small-font;
+                    font-size: f.$small-font;
                 }
             }
         }
@@ -34,21 +35,21 @@ header{
 main{
     .restaurants{
         &__heading{
-            font-size: v.$large-font;
-            font-weight: v.$bold;
+            font-size: f.$large-font;
+            font-weight: f.$bold;
         }
     }
 }
 
 .menu{
     &__heading{
-        font-family: v.$shrikhand;
-        font-weight: v.$bold;
-        font-size: v.$xlarge;
+        font-family: f.$shrikhand;
+        font-weight: f.$bold;
+        font-size: f.$xlarge;
     }
 }
 
 footer{
-    font-family: v.$roboto;
-    font-weight: v.$normal;
+    font-family: f.$roboto;
+    font-weight: f.$normal;
 }

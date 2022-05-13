@@ -1,6 +1,7 @@
-@use "../utils/variables" as v; 
+@use "../utils/colors" as c; 
 @use "../utils/mixins" as m; 
-
+@use "../utils/fonts" as f;
+ 
 .header-cover{
     img{
         width: 100%;
@@ -9,7 +10,7 @@
 
 .menu{
     @include m.top-rounded;
-    background-color:v.$grey-2;
+    background-color:c.$grey-2;
     margin-top: -25px;
     position:absolute;
     width: calc(100%);
@@ -40,11 +41,11 @@
         padding-right:20px;
         line-height:20px;
         :first-child p:first-of-type{
-            font-weight: v.$bold;
+            font-weight: f.$bold;
         }
         .price{
             margin-top: 25px;
-            font-weight: v.$bold;
+            font-weight: f.$bold;
         }
     }
 }

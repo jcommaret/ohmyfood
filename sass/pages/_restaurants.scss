@@ -1,9 +1,10 @@
-@use "../utils/variables" as v; 
+@use "../utils/colors" as c; 
 @use "../utils/mixins" as m;
-
+@use "../utils/fonts" as f;
+ 
 .restaurants{
     padding:25px;
-    background-color: v.$grey-2;
+    background-color: c.$grey-2;
     @include m.flex-col;
     gap:20px;
     &__heading{
@@ -34,8 +35,8 @@
             padding-right: 10px;
             line-height: 20px;
             border-radius: 3px;
-            background-color: v.$light-green;
-            color:v.$dark-green;
+            background-color: c.$light-green;
+            color:c.$dark-green;
             font-size: 12px;
         }
         &__description{
@@ -46,10 +47,10 @@
             @include m.flex-row-sb
         }
         &__heading{
-            font-weight: v.$bold;
+            font-weight: f.$bold;
         }
         &__text{
-            font-weight: v.$light;
+            font-weight: f.$light;
         }
         &__favorites{
             i{

@@ -1,4 +1,4 @@
-@use "../utils/variables" as v; 
+@use "../utils/colors" as c; 
 @use "../utils/mixins" as m;
 
 button{
@@ -6,7 +6,7 @@ button{
     @include m.rounded;
     @include m.gradient; 
     @include m.shadow;
-    color: v.$white; 
+    color: c.$white; 
     height:50px;
     width:220px;  
     &:hover{
@@ -22,7 +22,7 @@ button{
             @include m.rounded;
             @include m.gradient; 
             @include m.shadow;
-            color: v.$white; 
+            color: c.$white; 
             height:50px;
             width:220px;  
             opacity: 1;
@@ -41,26 +41,26 @@ button{
                 @include m.flex-row;
                 @include m.shadow;
                 @include m.rounded;
-                background-color: v.$grey-2;
+                background-color: c.$grey-2;
                 height:80px;
                 width:100%;
                 line-height: 80px;
                 i{
-                    color: v.$grey-dark;
+                    color: c.$grey-dark;
                     margin-top: 30px;
                 }
                 &:hover{
-                    background-color: v.$bg-steps-hover;
+                    background-color: c.$bg-steps-hover;
                     i{
-                        color: v.$purple;
+                        color: c.$purple;
                     }
                     
                 }
             }       
             &__number{
                 @include m.rounded(12px);
-                color: v.$white;
-                background-color: v.$purple;
+                color: c.$white;
+                background-color: c.$purple;
                 height:20px;
                 width:20px;
                 margin-top: 28px;

@@ -1,10 +1,10 @@
-@use "variables" as v;
+@use "colors" as c;
 
-@mixin shadow ($shadow : 0px 0px 20px -5px v.$grey-dark){
+@mixin shadow ($shadow : 0px 0px 20px -5px c.$grey-dark){
     box-shadow: $shadow;
 }
 
-@mixin gradient ($gradient : linear-gradient(v.$pink, v.$purple)){
+@mixin gradient ($gradient : linear-gradient(c.$pink, c.$purple)){
     background-image: $gradient;
 }
 

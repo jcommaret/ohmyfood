@@ -1,5 +1,5 @@
-@use "../utils/variables" as v; 
+@use "../utils/fonts" as f; 
 
 :root{
-    font-family: v.$roboto;
+    font-family: f.$roboto;
 }

@@ -1,10 +1,10 @@
 
-@use "../utils/variables" as v; 
+@use "../utils/colors" as c; 
 
 .footer{
     padding: 25px;
-    background-color: v.$bg-footer;
-    color:v.$white;
+    background-color: c.$bg-footer;
+    color:c.$white;
     &__logo{
         margin-bottom: 25px;
     }

@@ -1,5 +1,6 @@
-@use "../utils/variables" as v; 
+@use "../utils/colors" as c; 
 @use "../utils/mixins" as m;
+@use "../utils/fonts" as f; 
 
 .loader {
     @include m.flex-col;
@@ -23,7 +24,7 @@
     }
     p{
         margin-top:40px;
-        font-family: v.$shrikhand;
+        font-family: f.$shrikhand;
         font-size: 48px;
         text-align: center;
         color:#FFF;

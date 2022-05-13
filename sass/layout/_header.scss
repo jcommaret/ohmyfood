@@ -1,4 +1,4 @@
-@use "../utils/variables" as v; 
+@use "../utils/colors" as c; 
 @use "../utils/mixins" as m; 
 
 .header{
@@ -9,12 +9,12 @@
         }
     }
     &-location{
-        background-color:v.$grey-1;
+        background-color:c.$grey-1;
         height:62px;
         line-height: 62px;
     }
     &-description{
-        background-color:v.$grey-2;
+        background-color:c.$grey-2;
         height: 287px;
     }
     &-use{
