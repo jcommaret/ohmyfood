@@ -1,4 +1,5 @@
 @use "../utils/variables" as v; 
+@use "../utils/mixins" as m; 
 
 .header{
     &-nav{
@@ -26,7 +27,7 @@
         }
         &__steps{
             &__button{
-                @include v.flex-row;
+                @include m.flex-row;
                 height:50px;
                 width:100%;
             }       

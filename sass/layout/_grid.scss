@@ -1,22 +1,23 @@
 @use "../utils/variables" as v; 
+@use "../utils/mixins" as m; 
 
 .header{
     &-nav{
-        @include v.flex-row-center;
+        @include m.flex-row-center;
     }
     &-location{
-        @include v.flex-row-center;
+        @include m.flex-row-center;
     }
     &-description{
         text-align: center;        
         &__heading{
-            @include v.margin-auto;
+            @include m.margin-auto;
             width: 200px;
             padding-top:42px;
             line-height:30px;
         }
         &__text{
-            @include v.margin-auto;
+            @include m.margin-auto;
             width: 285px;
             margin-top:20px;
             line-height:20px;

@@ -1,21 +1,22 @@
 @use "../utils/variables" as v; 
+@use "../utils/mixins" as m;
 
 .restaurants{
     padding:25px;
     background-color: v.$grey-2;
-    @include v.flex-col;
+    @include m.flex-col;
     gap:20px;
     &__heading{
         margin-top: 50px;
         margin-bottom: 10px;
     }
     .place{
-        @include v.shadow;
-        @include v.rounded;
+        @include m.shadow;
+        @include m.rounded;
         height:250px;
         img{
             width:100%;
-            @include v.top-rounded;
+            @include m.top-rounded;
         }
         &__img{
             max-width: 100%;
@@ -42,7 +43,7 @@
             margin-left: 15px;
             font-size: 16px;
             line-height:20px;
-            @include v.flex-row-sb
+            @include m.flex-row-sb
         }
         &__heading{
             font-weight: v.$bold;

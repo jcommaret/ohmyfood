@@ -1,15 +1,16 @@
 @use "../utils/variables" as v; 
+@use "../utils/mixins" as m;
 
 button{
     border:none;
-    @include v.rounded;
-    @include v.gradient; 
-    @include v.shadow;
+    @include m.rounded;
+    @include m.gradient; 
+    @include m.shadow;
     color: v.$white; 
     height:50px;
     width:220px;  
     &:hover{
-        @include v.gradient; 
+        @include m.gradient; 
         opacity: 0.75;
         cursor: pointer;
     }
@@ -18,15 +19,15 @@ button{
     &-description{
         &__button{
             border:none;
-            @include v.rounded;
-            @include v.gradient; 
-            @include v.shadow;
+            @include m.rounded;
+            @include m.gradient; 
+            @include m.shadow;
             color: v.$white; 
             height:50px;
             width:220px;  
             opacity: 1;
             &:hover{
-                @include v.gradient; 
+                @include m.gradient; 
                 opacity: 0.75;
                 cursor: pointer;
             }
@@ -34,18 +35,18 @@ button{
     }
     &-use{
         &__steps{
-            @include v.flex-col;
+            @include m.flex-col;
             gap:25px;
             &__button{
-                @include v.flex-row;
-                @include v.shadow;
-                @include v.rounded;
+                @include m.flex-row;
+                @include m.shadow;
+                @include m.rounded;
                 background-color: v.$grey-2;
                 height:80px;
                 width:100%;
                 line-height: 80px;
                 i{
-                    color: v.$grey-3;
+                    color: v.$grey-dark;
                     margin-top: 30px;
                 }
                 &:hover{
@@ -57,7 +58,7 @@ button{
                 }
             }       
             &__number{
-                @include v.rounded(12px);
+                @include m.rounded(12px);
                 color: v.$white;
                 background-color: v.$purple;
                 height:20px;

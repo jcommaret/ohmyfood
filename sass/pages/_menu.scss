@@ -1,4 +1,5 @@
 @use "../utils/variables" as v; 
+@use "../utils/mixins" as m; 
 
 .header-cover{
     img{
@@ -7,13 +8,13 @@
 }
 
 .menu{
-    @include v.top-rounded;
+    @include m.top-rounded;
     background-color:v.$grey-2;
     margin-top: -25px;
     position:absolute;
     width: calc(100%);
     &__head{
-        @include v.flex-row-sb;
+        @include m.flex-row-sb;
         margin-top:25px;
         padding-left:20px;
         margin-right: 15px;
@@ -26,12 +27,12 @@
         margin-top: 45px;
         text-transform: uppercase;
     }
-    @include v.flex-col;
+    @include m.flex-col;
     gap:12px;
     .plat{
-        @include v.flex-row-sb;
-        @include v.shadow;
-        @include v.rounded;
+        @include m.flex-row-sb;
+        @include m.shadow;
+        @include m.rounded;
         align-items: center;
         height:70px;
         font-size: 20px;

@@ -1,18 +1,19 @@
 @use "../utils/variables" as v; 
+@use "../utils/mixins" as m;
 
 .loader {
-    @include v.flex-col;
+    @include m.flex-col;
     position: absolute;
     z-index:1000;
     overflow: hidden;
     height: 100%;
     width: 100%;
-    @include v.gradient;
+    @include m.gradient;
     animation: hideAnimation 0s ease-in 3s;
     animation-fill-mode: forwards;
     .load{
         margin:auto;
-        @include v.flex-col;
+        @include m.flex-col;
         justify-content: center;
     }
     i{
