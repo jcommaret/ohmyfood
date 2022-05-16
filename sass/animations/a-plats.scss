@@ -1,6 +1,33 @@
 @use "../utils/mixins" as m; 
-
+@use "../utils/colors" as c; 
 .plat{
     @include m.fadeInAnimation;
 }
 
+.plat{
+    .check{
+        transition: width 2s;
+    }
+    .eat p{
+        width: 300px;
+        transition: width 2s;
+    }
+
+    &:hover {
+        .check{
+            width: 70px;
+            i{
+                transform: rotate(360deg);
+            }
+        } 
+        .price{
+            right: 75px;
+        }
+        .eat p{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 320px;
+        }
+    } 
+}

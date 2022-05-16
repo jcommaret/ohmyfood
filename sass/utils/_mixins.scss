@@ -17,6 +17,11 @@
     border-top-left-radius: $radius;
 }
 
+@mixin right-rounded($radius:25px) {
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
 @mixin flex{
     display: flex;
 }

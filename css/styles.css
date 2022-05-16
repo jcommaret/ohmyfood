@@ -349,8 +349,36 @@ footer i {
   font-weight: 900;
 }
 .food .plat .price {
-  margin-top: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  margin-top: 0px;
+  padding: 25px;
   font-weight: 900;
+  right: 25px;
+  transition: right 2s;
+}
+.food .plat .check {
+  box-shadow: 0px 0px 20px -5px #999;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  line-height: 70px;
+  position: absolute;
+  right: 25px;
+  width: 0px;
+  height: 70px;
+  background-color: #99E2D0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+}
+.food .plat .check i {
+  margin-left: 25px;
+  transition: transform 2s;
+  padding: 5px;
+  background-color: white;
+  border-radius: 25px;
+  color: #99E2D0;
 }
 
 .restaurants {
@@ -463,6 +491,29 @@ footer i {
   animation-delay: 3s;
   animation: fadeIn 3s linear;
   animation-fill-mode: forwards;
+}
+
+.plat .check {
+  transition: width 2s;
+}
+.plat .eat p {
+  width: 300px;
+  transition: width 2s;
+}
+.plat:hover .check {
+  width: 70px;
+}
+.plat:hover .check i {
+  transform: rotate(360deg);
+}
+.plat:hover .price {
+  right: 75px;
+}
+.plat:hover .eat p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 320px;
 }
 
 /* Base */

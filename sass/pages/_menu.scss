@@ -44,8 +44,35 @@
             font-weight: f.$bold;
         }
         .price{
-            margin-top: 25px;
+            @include m.right-rounded;
+            position: absolute;
+            margin-top: 0px;
+            padding: 25px;
             font-weight: f.$bold;
+            right: 25px;
+            transition: right 2s;   
+        }
+        .check{
+            @include m.shadow;
+            border-top-right-radius:25px;
+            border-bottom-right-radius:25px;
+            line-height: 70px;
+            position: absolute; 
+            right: 25px;
+            width: 0px;
+            height: 70px;
+            background-color: c.$light-green;
+            border-top-right-radius:25px;
+            border-bottom-right-radius:25px;
+            overflow: hidden;
+            i{
+                margin-left: 25px;
+                transition: transform 2s;
+                padding:5px;
+                background-color: white;
+                border-radius:25px;
+                color:c.$light-green;
+            }
         }
     }
 }
