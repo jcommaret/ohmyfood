@@ -2,9 +2,7 @@
 @use "../utils/mixins" as m; 
 
 .header{
-    &-nav{
-        @include m.flex-row-center;
-    }
+    
     &-location{
         @include m.flex-row-center;
     }

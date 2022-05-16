@@ -1,14 +1,7 @@
 @use "../utils/colors" as c;  
 @use "../utils/fonts" as f;  
 
-.header{
-    &__logo{
-        color:c.$black;
-        font-family: f.$shrikhand;
-        font-size:32px;
-        margin-top: 20px;
-    }
-}
+
 .footer{
     &__logo{
         color:c.$white;

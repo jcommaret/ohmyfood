@@ -4,8 +4,8 @@
 
 /* Layout */
 @use "layout/grid";
-@use "layout/blocks";
 @use "layout/header";
+@use "layout/restaurants";
 @use "layout/footer";
 
 /* Components */
@@ -17,8 +17,6 @@
 
 /* Pages */
 @use "pages/menu";
-@use "pages/restaurants";
-
 /* Animations */
 @use "animations/a-button.scss";
 @use "animations/a-spinner.scss";

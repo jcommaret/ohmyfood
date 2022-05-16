@@ -1,31 +1,15 @@
 @use "../utils/colors" as c; 
 @use "../utils/mixins" as m; 
+@use "../utils/fonts" as f; 
 
 .header{
-    &-nav{
+    &__logo{
+        padding-top: 24px;
         height:62px;
-        &__logo{
-            margin-top:24px;
-        }
-    }
-    &-description{
-        background-color:c.$grey-2;
-        height: 287px;
-    }
-    &-use{
-        height:440px;
-        padding-top:50px;
-        padding-left:25px;
-        padding-right:25px;
-        &__heading{
-            margin-bottom:30px;
-        }
-        &__steps{
-            &__button{
-                @include m.flex-row;
-                height:50px;
-                width:100%;
-            }       
-        }
+        text-align: center;
+        color:c.$black;
+        font-family: f.$shrikhand;
+        font-size:32px;
     }       
 }
+

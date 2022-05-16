@@ -1,0 +1,20 @@
+&-description{
+    background-color:c.$grey-2;
+    height: 287px;
+}
+&-use{
+    height:440px;
+    padding-top:50px;
+    padding-left:25px;
+    padding-right:25px;
+    &__heading{
+        margin-bottom:30px;
+    }
+    &__steps{
+        &__button{
+            @include m.flex-row;
+            height:50px;
+            width:100%;
+        }       
+    }
+}
