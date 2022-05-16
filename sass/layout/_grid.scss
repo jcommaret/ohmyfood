@@ -3,26 +3,6 @@
 
 .header{
     
-    &-location{
-        @include m.flex-row-center;
-    }
-    &-description{
-        text-align: center;        
-        &__heading{
-            @include m.margin-auto;
-            width: 200px;
-            padding-top:42px;
-            line-height:30px;
-        }
-        &__text{
-            @include m.margin-auto;
-            width: 285px;
-            margin-top:20px;
-            line-height:20px;
-        }
-        &__button{
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-    }
+   
+    
 }
