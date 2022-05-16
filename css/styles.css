@@ -192,6 +192,10 @@ button:hover {
   cursor: pointer;
 }
 
+header {
+  height: 62px;
+}
+
 .footer__logo {
   color: #FFF;
   font-family: "Shrikhand", sans-serif;
