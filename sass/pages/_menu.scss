@@ -9,6 +9,11 @@
 }
 
 .menu{
+    &__heading{
+        font-family: f.$shrikhand;
+        font-weight: f.$bold;
+        font-size: f.$xlarge;
+    }
     @include m.top-rounded;
     background-color:c.$grey-2;
     margin-top: -25px;

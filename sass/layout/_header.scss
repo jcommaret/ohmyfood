@@ -3,14 +3,14 @@
 @use "../utils/fonts" as f; 
 
 .header{
-    
     &__logo{
-        padding-top: 24px;
-        height:62px;
         text-align: center;
         color:c.$black;
         font-family: f.$shrikhand;
         font-size:32px;
+        h1{
+            padding-top:24px;
+        }
     }       
 }
 

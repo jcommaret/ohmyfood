@@ -1,7 +1,10 @@
 
-@use "../utils/colors" as c; 
+@use "../utils/colors" as c;
+@use "../utils/fonts" as f; 
 
 .footer{
+    font-family: f.$roboto;
+    font-weight: f.$normal;
     padding: 25px;
     background-color: c.$bg-footer;
     color:c.$white;

@@ -3,19 +3,24 @@
 @use "base/fonts";
 
 /* Layout */
-@use "layout/grid";
 @use "layout/header";
 @use "layout/restaurants";
+@use "layout/top-section";
+@use "layout/use-section";
+
 @use "layout/footer";
 
 /* Components */
 @use "components/root";
 @use "components/buttons";
 @use "components/logo";
+@use "components/place";
 @use "components/icons";
 @use "components/hearth";
 
 /* Pages */
+
+@use "pages/index";
 @use "pages/menu";
 /* Animations */
 @use "animations/a-button.scss";

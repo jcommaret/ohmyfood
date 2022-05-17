@@ -2,60 +2,14 @@
 @use "../utils/mixins" as m;
 @use "../utils/fonts" as f;
  
-.restaurants{
-    padding:25px;
+.etablissements-section{
     background-color: c.$grey-2;
     @include m.flex-col;
     gap:20px;
-    &__heading{
+    h2{
         margin-top: 50px;
         margin-bottom: 10px;
-    }
-    .place{
-        @include m.shadow;
-        @include m.rounded;
-        height:250px;
-        img{
-            width:100%;
-            @include m.top-rounded;
-        }
-        &__img{
-            max-width: 100%;
-            background-size:cover;
-            background-position: center center;
-            height: 174px;
-            object-fit: cover;
-        }
-        &_new{
-            margin-left:-80px;
-            margin-top: 10px;
-            position:absolute;
-            height: 20px;
-            padding-left: 10px;
-            padding-right: 10px;
-            line-height: 20px;
-            border-radius: 3px;
-            background-color: c.$light-green;
-            color:c.$dark-green;
-            font-size: 12px;
-        }
-        &__description{
-            margin-top: 15px;
-            margin-left: 15px;
-            font-size: 16px;
-            line-height:20px;
-            @include m.flex-row-sb
-        }
-        &__heading{
-            font-weight: f.$bold;
-        }
-        &__text{
-            font-weight: f.$light;
-        }
-        &__favorites{
-            i{
-                font-size: 30px;
-            }
-        }
+        font-size: f.$large-font;
+        font-weight: f.$bold;
     }
 }

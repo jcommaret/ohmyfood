@@ -1,16 +1,16 @@
-.header{
+.top-section{
     &-description{
         &__button{
             transition-property: opacity;
             transition-duration: 0.3s;
         }
     }
-    &-use{
-        &__steps{
-            &__button{
-                transition-property: background-color;
-                transition-duration: 0.3s;
-            }
+}
+.use-section{
+    .step{
+        &__button{
+            transition-property: background-color;
+            transition-duration: 0.3s;
         }
     }
 }
