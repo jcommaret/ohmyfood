@@ -2,82 +2,26 @@
 @use "../utils/mixins" as m; 
 @use "../utils/fonts" as f;
  
-.header-cover{
-    img{
-        width: 100%;
-    }
-}
-
 .menu{
-    &__heading{
-        font-family: f.$shrikhand;
-        font-weight: f.$bold;
-        font-size: f.$xlarge;
-    }
-    @include m.top-rounded;
-    background-color:c.$grey-2;
-    margin-top: -25px;
-    position:absolute;
-    width: calc(100%);
-    &__head{
-        @include m.flex-row-sb;
-        margin-top:25px;
-        padding-left:20px;
-        margin-right: 15px;
-    }
-}
-
-.food{
-    padding: 25px;
-    h3{
-        margin-top: 45px;
-        text-transform: uppercase;
-    }
-    @include m.flex-col;
-    gap:12px;
-    .plat{
-        @include m.flex-row-sb;
-        @include m.shadow;
-        @include m.rounded;
-        align-items: center;
-        height:70px;
-        font-size: 20px;
-        padding-left: 20px;
-        padding-right:20px;
-        line-height:20px;
-        :first-child p:first-of-type{
+    .carte{
+        @include m.top-rounded;
+        padding:25px;
+        position: relative;
+        margin-top: -50px;
+        background-color:c.$grey-2;    
+        &__heading{
+            font-family: f.$shrikhand;
             font-weight: f.$bold;
+            font-size: f.$xlarge;
+            @include m.flex-row-sb;
         }
-        .price{
-            @include m.right-rounded;
-            position: absolute;
-            margin-top: 0px;
-            padding: 25px;
-            font-weight: f.$bold;
-            right: 25px;
-            transition: right 2s;   
-        }
-        .check{
-            @include m.shadow;
-            border-top-right-radius:25px;
-            border-bottom-right-radius:25px;
-            line-height: 70px;
-            position: absolute; 
-            right: 25px;
-            width: 0px;
-            height: 70px;
-            background-color: c.$light-green;
-            border-top-right-radius:25px;
-            border-bottom-right-radius:25px;
-            overflow: hidden;
-            i{
-                margin-left: 25px;
-                transition: transform 2s;
-                padding:5px;
-                background-color: white;
-                border-radius:25px;
-                color:c.$light-green;
-            }
+    }
+    .food{
+        @include m.flex-col;
+        gap:12px;
+        h3{
+            margin-top: 45px;
+            text-transform: uppercase;
         }
     }
 }

@@ -4,8 +4,16 @@
     box-shadow: $shadow;
 }
 
-@mixin gradient ($gradient : linear-gradient(c.$pink, c.$purple)){
+@mixin gradient (
+    $gradient : linear-gradient(c.$pink, c.$purple), 
+    $gradient-l : linear-gradient(lighten(c.$pink, 10), lighten(c.$purple, 10))
+)
+{  
     background-image: $gradient;
+    &:hover{
+        background-image: $gradient-l ;
+        cursor: pointer;
+    }
 }
 
 @mixin rounded($radius:25px) {

@@ -2,22 +2,25 @@
 @use "base/reset";
 @use "base/fonts";
 
-/* Layout */
+
+/* general */
 @use "layout/header";
-@use "layout/restaurants";
+@use "layout/footer";
+/* index page */
 @use "layout/top-section";
 @use "layout/use-section";
-
-@use "layout/footer";
+@use "layout/places-section";
+/* restaurant */
+@use "layout/cover-section";
 
 /* Components */
 @use "components/root";
-@use "components/buttons";
 @use "components/logo";
+@use "components/buttons";
 @use "components/place";
-@use "components/icons";
 @use "components/hearth";
-
+@use "components/cover";
+@use "components/plat";
 /* Pages */
 
 @use "pages/index";

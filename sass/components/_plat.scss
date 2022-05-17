@@ -1,0 +1,49 @@
+@use "../utils/colors" as c;  
+@use "../utils/fonts" as f; 
+@use "../utils/mixins" as m; 
+
+.plat{
+    @include m.flex-row-sb;
+    @include m.shadow;
+    @include m.rounded;
+    align-items: center;
+    height:70px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    line-height:20px;
+    :first-child p:first-of-type{
+        font-weight: f.$bold;
+    }
+    .price{
+        @include m.right-rounded;
+        position: absolute;
+        margin-top: 0px;
+        padding: 25px;
+        font-weight: f.$bold;
+        right: 25px;
+        transition: right 2s;   
+    }
+    .check{
+        @include m.shadow;
+        border-top-right-radius:25px;
+        border-bottom-right-radius:25px;
+        line-height: 70px;
+        position: absolute; 
+        right: 25px;
+        width: 0px;
+        height: 70px;
+        background-color: c.$light-green;
+        border-top-right-radius:25px;
+        border-bottom-right-radius:25px;
+        overflow: hidden;
+        i{
+            margin-left: 25px;
+            transition: transform 2s;
+            padding:5px;
+            background-color: white;
+            border-radius:25px;
+            color:c.$light-green;
+        }
+    }
+}

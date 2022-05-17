@@ -1,5 +1,6 @@
 @use "../utils/mixins" as m; 
 @use "../utils/colors" as c; 
+
 .plat{
     @include m.fadeInAnimation;
 }
@@ -9,10 +10,11 @@
         transition: width 2s;
     }
     .eat p{
-        width: 300px;
+        white-space: nowrap;
         transition: width 2s;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-
     &:hover {
         .check{
             width: 70px;
@@ -24,10 +26,10 @@
             right: 75px;
         }
         .eat p{
+            width: calc(100% - 75px);
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
-            width: 320px;
         }
     } 
 }

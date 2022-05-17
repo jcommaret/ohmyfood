@@ -1,17 +1,4 @@
 @use "../utils/colors" as c; 
 @use "../utils/mixins" as m;
 
-button{
-    border:none;
-    @include m.rounded;
-    @include m.gradient; 
-    @include m.shadow;
-    color: c.$white; 
-    height:50px;
-    width:220px;  
-    &:hover{
-        @include m.gradient; 
-        opacity: 0.75;
-        cursor: pointer;
-    }
-}
+

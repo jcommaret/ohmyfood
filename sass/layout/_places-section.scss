@@ -2,7 +2,7 @@
 @use "../utils/mixins" as m;
 @use "../utils/fonts" as f;
  
-.etablissements-section{
+.places-section{
     background-color: c.$grey-2;
     @include m.flex-col;
     gap:20px;

@@ -1,7 +1,7 @@
 .top-section{
     &-description{
         &__button{
-            transition-property: opacity;
+            transition-property: background-image;
             transition-duration: 0.3s;
         }
     }
