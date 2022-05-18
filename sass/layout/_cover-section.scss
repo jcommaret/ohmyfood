@@ -1,9 +1,10 @@
 .cover{
-    height:350px;
+    min-height:350px;
     img{
         width: 100%;
     }
     .cover__img{
-        height:350px;
+        min-height:400px;
+        max-height: 800px;
     }
 }

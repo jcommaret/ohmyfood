@@ -12,10 +12,12 @@
     }
     .use-steps{
         @include m.flex-col;
+        
         @media (min-width : b.$tablet)
         {
             @include m.flex-row;
         }
+        
         gap:25px;
             .step{
                 &__button{

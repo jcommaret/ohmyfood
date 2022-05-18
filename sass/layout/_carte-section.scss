@@ -1,7 +1,7 @@
 @use "../utils/colors" as c; 
 @use "../utils/mixins" as m; 
 @use "../utils/fonts" as f;
-
+@use "../utils/breakpoints" as b;
 
 .carte{
     @include m.top-rounded;
@@ -16,11 +16,85 @@
         @include m.flex-row-sb;
     }
     .food{
-        @include m.flex-col;
-        gap:12px;
         &__heading{
             margin-top: 45px;
             text-transform: uppercase;
         }
+        @media (min-width : b.$tablet)
+        {
+            gap:20px;
+            flex: 1;
+            @include m.flex-row;
+            .separator{
+                @include m.flex-col;
+                gap:12px;
+            }
+        }
+        .separator{
+            @include m.flex-col;
+            gap:12px;
+        }
+    }
+    .plat{
+        @include m.fadeInAnimation;
+        @include m.shadow;
+        @include m.rounded;
+        :first-child p:first-of-type{
+            font-weight: f.$bold;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        &__eat{
+            padding:20px;
+            p{
+                white-space: nowrap;
+                transition: width 2s;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        &-informations{
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+        
+            &__price{
+                padding-top: 35px;
+                padding-right: 20px;
+            }
+        
+            &__check{
+                @include m.right-rounded;
+                display: flex;
+                justify-content: center;
+                width: 0px;
+                line-height: 72px;
+                background-color: c.$light-green;
+                transition-property: width;
+                transition-duration: 2s;
+                overflow: hidden;
+                i{
+                    padding:10px;
+                    background-color: white;
+                    color:c.$light-green;
+                    transition: transform 2s;
+                    border-radius:25px;
+                    color:c.$light-green;    
+                }   
+            }    
+        }
+        
+        &:hover {
+            .plat-informations__check{
+                width: 70px;
+                i{
+                    transform: rotate(360deg);
+                }
+            } 
+        }
+        
     }
 }

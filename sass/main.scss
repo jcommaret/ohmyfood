@@ -2,15 +2,8 @@
 @use "base/reset";
 @use "base/common";
 
-/* Pages */
+/* Animations */
+@use "animations/loader.scss";
 @use "pages/index";
 @use "pages/menu";
 
-/* Components */
-@use "components/place";
-@use "components/hearth";
-@use "components/cover";
-@use "components/plat";
-
-/* Animations */
-@use "animations/loader.scss";
