@@ -166,7 +166,6 @@ a {
 
 .use-section {
   padding: 25px;
-  height: 440px;
 }
 .use-section__heading {
   margin-bottom: 30px;
@@ -177,6 +176,12 @@ a {
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+@media (min-width: 768px) {
+  .use-section .use-steps {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .use-section .use-steps .step__button {
   display: flex;
@@ -268,6 +273,80 @@ a {
   text-transform: uppercase;
 }
 
+.plat {
+  animation-delay: 3s;
+  animation: fadeIn 3s linear;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px -5px #999;
+  border-radius: 25px;
+  align-items: center;
+  height: 70px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 20px;
+}
+.plat :first-child p:first-of-type {
+  font-weight: 900;
+}
+.plat__eat p {
+  white-space: nowrap;
+  transition: width 2s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat__price {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  margin-top: 0px;
+  padding: 25px;
+  font-weight: 900;
+  right: 25px;
+  transition: right 2s;
+}
+.plat__check {
+  box-shadow: 0px 0px 20px -5px #999;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  line-height: 70px;
+  position: absolute;
+  right: 25px;
+  width: 0px;
+  height: 70px;
+  background-color: #99E2D0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+  transition: width 2s;
+}
+.plat__check i {
+  margin-left: 25px;
+  transition: transform 2s;
+  padding: 5px;
+  background-color: white;
+  border-radius: 25px;
+  color: #99E2D0;
+}
+.plat:hover .plat__check {
+  width: 70px;
+}
+.plat:hover .plat__check i {
+  transform: rotate(360deg);
+}
+.plat:hover .plat__price {
+  right: 75px;
+}
+.plat:hover .place__eat p {
+  width: calc(100% - 75px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .place {
   box-shadow: 0px 0px 20px -5px #999;
   border-radius: 25px;
@@ -334,80 +413,6 @@ a {
 }
 .cover .cover__img {
   height: 450px;
-}
-
-.plat {
-  animation-delay: 3s;
-  animation: fadeIn 3s linear;
-  animation-fill-mode: forwards;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0px 0px 20px -5px #999;
-  border-radius: 25px;
-  align-items: center;
-  height: 70px;
-  font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  line-height: 20px;
-}
-.plat :first-child p:first-of-type {
-  font-weight: 900;
-}
-.plat .eat p {
-  white-space: nowrap;
-  transition: width 2s;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.plat .price {
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  position: absolute;
-  margin-top: 0px;
-  padding: 25px;
-  font-weight: 900;
-  right: 25px;
-  transition: right 2s;
-}
-.plat .check {
-  box-shadow: 0px 0px 20px -5px #999;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  line-height: 70px;
-  position: absolute;
-  right: 25px;
-  width: 0px;
-  height: 70px;
-  background-color: #99E2D0;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  overflow: hidden;
-  transition: width 2s;
-}
-.plat .check i {
-  margin-left: 25px;
-  transition: transform 2s;
-  padding: 5px;
-  background-color: white;
-  border-radius: 25px;
-  color: #99E2D0;
-}
-.plat:hover .check {
-  width: 70px;
-}
-.plat:hover .check i {
-  transform: rotate(360deg);
-}
-.plat:hover .price {
-  right: 75px;
-}
-.plat:hover .eat p {
-  width: calc(100% - 75px);
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .loader {

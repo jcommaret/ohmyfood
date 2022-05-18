@@ -16,7 +16,7 @@
     :first-child p:first-of-type{
         font-weight: f.$bold;
     }
-    .eat{
+    &__eat{
         p{
             white-space: nowrap;
             transition: width 2s;
@@ -24,7 +24,7 @@
             text-overflow: ellipsis;
         }
     }
-    .price{
+    &__price{
         @include m.right-rounded;
         position: absolute;
         margin-top: 0px;
@@ -33,7 +33,7 @@
         right: 25px;
         transition: right 2s;   
     }
-    .check{
+    &__check{
         @include m.shadow;
         border-top-right-radius:25px;
         border-bottom-right-radius:25px;
@@ -55,18 +55,19 @@
             border-radius:25px;
             color:c.$light-green;
         }
+        
     }
     &:hover {
-        .check{
+        .plat__check{
             width: 70px;
             i{
                 transform: rotate(360deg);
             }
         } 
-        .price{
+        .plat__price{
             right: 75px;
         }
-        .eat p{
+        .place__eat p{
             width: calc(100% - 75px);
             text-overflow: ellipsis;
             overflow: hidden;
