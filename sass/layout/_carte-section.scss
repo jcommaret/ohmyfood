@@ -15,7 +15,7 @@
         font-size: f.$xlarge;
         @include m.flex-row-sb;
     }
-    .food{
+    .food{     
         &__heading{
             margin-top: 45px;
             text-transform: uppercase;
@@ -25,6 +25,7 @@
             gap:20px;
             flex: 1;
             @include m.flex-row;
+            justify-content: space-between;
             .separator{
                 @include m.flex-col;
                 gap:12px;
@@ -33,6 +34,7 @@
         .separator{
             @include m.flex-col;
             gap:12px;
+            min-width:calc(100% / 3 - 36px)
         }
     }
     .plat{
@@ -60,7 +62,7 @@
             display: flex;
             flex-direction: row;
             overflow: hidden;
-        
+            text-overflow: ellipsis;
             &__price{
                 padding-top: 35px;
                 padding-right: 20px;

@@ -404,6 +404,7 @@ a {
     flex: 1;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   .carte .food .separator {
     display: flex;
@@ -415,6 +416,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  min-width: calc(33.3333333333% - 36px);
 }
 .carte .plat {
   animation: fadeIn 3s linear;
@@ -441,6 +443,7 @@ a {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .carte .plat-informations__price {
   padding-top: 35px;
