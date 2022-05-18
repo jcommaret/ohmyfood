@@ -263,7 +263,7 @@ a {
   flex-direction: column;
   gap: 12px;
 }
-.carte .food h3 {
+.carte .food__heading {
   margin-top: 45px;
   text-transform: uppercase;
 }
@@ -455,37 +455,8 @@ a {
     height: 0%;
   }
 }
-.plat {
-  animation-delay: 3s;
-  animation: fadeIn 3s linear;
-  animation-fill-mode: forwards;
-}
-.plat .check {
-  transition: width 2s;
-}
-.plat .eat p {
-  white-space: nowrap;
-  transition: width 2s;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.plat:hover .check {
-  width: 70px;
-}
-.plat:hover .check i {
-  transform: rotate(360deg);
-}
-.plat:hover .price {
-  right: 75px;
-}
-.plat:hover .eat p {
-  width: calc(100% - 75px);
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 /* Base */
+/* Pages */
 /* Components */
 /* Animations */
 

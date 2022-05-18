@@ -18,7 +18,7 @@
     .food{
         @include m.flex-col;
         gap:12px;
-        h3{
+        &__heading{
             margin-top: 45px;
             text-transform: uppercase;
         }

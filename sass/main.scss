@@ -2,6 +2,7 @@
 @use "base/reset";
 @use "base/common";
 
+/* Pages */
 @use "pages/index";
 @use "pages/menu";
 
@@ -14,6 +15,4 @@
 @use "components/plat";
 
 /* Animations */
-@use "animations/a-button.scss";
-@use "animations/a-spinner.scss";
-@use "animations/a-plats.scss";
+@use "animations/loader.scss";
