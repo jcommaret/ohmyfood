@@ -236,6 +236,27 @@ a {
   font-size: 20px;
   font-weight: 900;
 }
+.places-section .all-places {
+  gap: 20px;
+}
+@media (min-width: 992px) {
+  .places-section .all-places {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .places-section .places {
+    gap: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+}
+.places-section .place {
+  margin-top: 20px;
+  display: block;
+}
 
 .cover {
   height: 350px;
@@ -350,7 +371,13 @@ a {
 .place {
   box-shadow: 0px 0px 20px -5px #999;
   border-radius: 25px;
+  flex: 1;
   height: 250px;
+}
+@media (min-width: 992px) {
+  .place {
+    height: 300px;
+  }
 }
 .place img {
   width: 100%;
@@ -363,6 +390,11 @@ a {
   background-position: center center;
   height: 174px;
   object-fit: cover;
+}
+@media (min-width: 992px) {
+  .place__img {
+    min-height: 220px;
+  }
 }
 .place_new {
   margin-left: -80px;
@@ -424,7 +456,7 @@ a {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  animation: hideAnimation 0s ease-in 3s;
+  animation: hideAnimation 0s ease-in 0.2s;
   animation-fill-mode: forwards;
 }
 .loader:hover {

@@ -1,7 +1,8 @@
 @use "../utils/colors" as c; 
 @use "../utils/mixins" as m;
 @use "../utils/fonts" as f;
- 
+@use "../utils/breakpoints" as b;
+
 .places-section{
     background-color: c.$grey-2;
     @include m.flex-col;
@@ -12,5 +13,24 @@
         margin-bottom: 10px;
         font-size: f.$large-font;
         font-weight: f.$bold;
+    }
+    .all-places{
+        gap:20px;
+        @media (min-width : b.$desktop)
+        {
+            @include m.flex-row;
+        }
+    }
+    .places{
+        @media (min-width : b.$tablet)
+        {
+            gap:20px;
+            flex: 1;
+            @include m.flex-row;
+        }
+    }
+    .place{
+        margin-top: 20px;
+        display: block;
     }
 }

@@ -1,11 +1,17 @@
 @use "../utils/colors" as c; 
 @use "../utils/mixins" as m;
 @use "../utils/fonts" as f;
+@use "../utils/breakpoints" as b;
 
 .place{
     @include m.shadow;
     @include m.rounded;
+    flex:1;
     height:250px;
+    @media (min-width : b.$desktop)
+        {
+            height: 300px;
+        } 
     img{
         width:100%;
         @include m.top-rounded;
@@ -14,7 +20,11 @@
         max-width: 100%;
         background-size:cover;
         background-position: center center;
-        height: 174px;
+        @media (min-width : b.$desktop)
+        {
+            min-height: 220px;
+        } 
+        height:174px;        
         object-fit: cover;
     }
     &_new{
@@ -35,7 +45,7 @@
         margin-left: 15px;
         font-size: 16px;
         line-height:20px;
-        @include m.flex-row-sb
+        @include m.flex-row-sb;
     }
     &__heading{
         font-weight: f.$bold;

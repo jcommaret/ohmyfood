@@ -10,7 +10,7 @@
     height: 100%;
     width: 100%;
     @include m.gradient;
-    animation: hideAnimation 0s ease-in 3s;
+    animation: hideAnimation 0s ease-in 0.2s;
     animation-fill-mode: forwards;
     .load{
         margin:auto;
