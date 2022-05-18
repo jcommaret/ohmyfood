@@ -3,6 +3,7 @@
 @use "../utils/mixins" as m; 
 
 .plat{
+    @include m.fadeInAnimation;
     @include m.flex-row-sb;
     @include m.shadow;
     @include m.rounded;
@@ -14,6 +15,14 @@
     line-height:20px;
     :first-child p:first-of-type{
         font-weight: f.$bold;
+    }
+    .eat{
+        p{
+            white-space: nowrap;
+            transition: width 2s;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
     .price{
         @include m.right-rounded;
@@ -37,6 +46,7 @@
         border-top-right-radius:25px;
         border-bottom-right-radius:25px;
         overflow: hidden;
+        transition: width 2s;
         i{
             margin-left: 25px;
             transition: transform 2s;
@@ -45,5 +55,23 @@
             border-radius:25px;
             color:c.$light-green;
         }
+    }
+    &:hover {
+        .check{
+            width: 70px;
+            i{
+                transform: rotate(360deg);
+            }
+        } 
+        .price{
+            right: 75px;
+        }
+        .eat p{
+            width: calc(100% - 75px);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+ 
     }
 }

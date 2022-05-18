@@ -1,17 +1,492 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 8 | @use "layout/header";
- *   | ^^^^^^^^^^^^^^^^^^^^
- *   '
- *   sass/main.scss 8:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 8 \2502  @use \"layout/header\";\a   \2502  ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/main.scss 8:1  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900");
+@import url("http://fonts.googleapis.com/css?family=Shrikhand");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 62px;
+}
+
+.header__back {
+  margin-left: 10px;
+  width: 10px;
+  line-height: 62px;
+  justify-content: flex-start;
+}
+.header__logo {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+}
+.header__logo h1 {
+  padding-top: 24px;
+}
+
+footer {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  padding: 25px;
+  background-color: #353535;
+  color: #FFF;
+}
+footer .footer__logo {
+  margin-bottom: 25px;
+  color: #FFF;
+  font-family: "Shrikhand", sans-serif;
+}
+footer .footer__menu li {
+  line-height: 25px;
+}
+footer .footer i {
+  width: 20px;
+}
+
+:root {
+  font-family: "Roboto", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    margin-top: 10px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+.top-section .location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 62px;
+  background-color: #eaeaea;
+}
+.top-section .location .here {
+  line-height: 62px;
+}
+.top-section .description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #F6F6F6;
+  height: 287px;
+}
+.top-section .description__heading {
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding-top: 42px;
+  line-height: 30px;
+}
+.top-section .description__text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 285px;
+  margin-top: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.top-section .description__button {
+  height: 50px;
+  width: 220px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 0px 20px -5px #999;
+  color: #FFF;
+  transition-property: background-image;
+  transition-duration: 0.3s;
+}
+.top-section .description__button:hover {
+  background-image: linear-gradient(#fface8, #ae80e5);
+  cursor: pointer;
+}
+
+.use-section {
+  padding: 25px;
+  height: 440px;
+}
+.use-section__heading {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.use-section .use-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.use-section .use-steps .step__button {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 20px -5px #999;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+.use-section .use-steps .step__button i {
+  color: #999;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.use-section .use-steps .step__button:hover {
+  background-color: #f5edff;
+}
+.use-section .use-steps .step__button:hover i {
+  color: #9356DC;
+}
+.use-section .use-steps .step__number {
+  border-radius: 12px;
+  color: #FFF;
+  background-color: #9356DC;
+  height: 20px;
+  width: 20px;
+  margin-top: 28px;
+  margin-left: -10px;
+}
+.use-section .use-steps .step__number span {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+.places-section {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+}
+.places-section__heading {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.cover {
+  height: 350px;
+}
+.cover img {
+  width: 100%;
+}
+.cover .cover__img {
+  height: 350px;
+}
+
+.carte {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  padding: 25px;
+  position: relative;
+  margin-top: -50px;
+  background-color: #F6F6F6;
+}
+.carte__heading {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.carte .food {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.carte .food h3 {
+  margin-top: 45px;
+  text-transform: uppercase;
+}
+
+:root {
+  font-family: "Roboto", serif;
+}
+
+.place {
+  box-shadow: 0px 0px 20px -5px #999;
+  border-radius: 25px;
+  height: 250px;
+}
+.place img {
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.place__img {
+  max-width: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 174px;
+  object-fit: cover;
+}
+.place_new {
+  margin-left: -80px;
+  margin-top: 10px;
+  position: absolute;
+  height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 20px;
+  border-radius: 3px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 12px;
+}
+.place__description {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.place__heading {
+  font-weight: 900;
+}
+.place__text {
+  font-weight: 100;
+}
+.place__favorites i {
+  font-size: 30px;
+}
+
+.hearth {
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../images/icons/coeur-regular.png");
+  transition-property: background-image;
+  transition-duration: 0.5s;
+}
+.hearth:hover {
+  background-image: url("../../images/icons/coeur-full.png");
+}
+
+.cover img {
+  width: 100%;
+}
+.cover .cover__img {
+  height: 450px;
+}
+
+.plat {
+  animation-delay: 3s;
+  animation: fadeIn 3s linear;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px -5px #999;
+  border-radius: 25px;
+  align-items: center;
+  height: 70px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 20px;
+}
+.plat :first-child p:first-of-type {
+  font-weight: 900;
+}
+.plat .eat p {
+  white-space: nowrap;
+  transition: width 2s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat .price {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  margin-top: 0px;
+  padding: 25px;
+  font-weight: 900;
+  right: 25px;
+  transition: right 2s;
+}
+.plat .check {
+  box-shadow: 0px 0px 20px -5px #999;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  line-height: 70px;
+  position: absolute;
+  right: 25px;
+  width: 0px;
+  height: 70px;
+  background-color: #99E2D0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+  transition: width 2s;
+}
+.plat .check i {
+  margin-left: 25px;
+  transition: transform 2s;
+  padding: 5px;
+  background-color: white;
+  border-radius: 25px;
+  color: #99E2D0;
+}
+.plat:hover .check {
+  width: 70px;
+}
+.plat:hover .check i {
+  transform: rotate(360deg);
+}
+.plat:hover .price {
+  right: 75px;
+}
+.plat:hover .eat p {
+  width: calc(100% - 75px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1000;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  animation: hideAnimation 0s ease-in 3s;
+  animation-fill-mode: forwards;
+}
+.loader:hover {
+  background-image: linear-gradient(#fface8, #ae80e5);
+  cursor: pointer;
+}
+.loader .load {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loader i {
+  font-size: 168px;
+  text-align: center;
+  color: #FFF;
+}
+.loader p {
+  margin-top: 40px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  color: #FFF;
+}
+
+@keyframes hideAnimation {
+  to {
+    width: 0%;
+    height: 0%;
+  }
+}
+.plat {
+  animation-delay: 3s;
+  animation: fadeIn 3s linear;
+  animation-fill-mode: forwards;
+}
+.plat .check {
+  transition: width 2s;
+}
+.plat .eat p {
+  white-space: nowrap;
+  transition: width 2s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat:hover .check {
+  width: 70px;
+}
+.plat:hover .check i {
+  transform: rotate(360deg);
+}
+.plat:hover .price {
+  right: 75px;
+}
+.plat:hover .eat p {
+  width: calc(100% - 75px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Base */
+/* Components */
+/* Animations */
+
+/*# sourceMappingURL=styles.css.map */

@@ -22,20 +22,19 @@
                     height:80px;
                     width:100%;
                     line-height: 80px;
-                i{
-                    color: c.$grey-dark;
-                    margin-top: 30px;
-                    margin-left: 10px;
-                    margin-right: 10px;
-                }
-                &:hover{
-                    background-color: c.$bg-steps-hover;
+                    transition-property: background-color;
+                    transition-duration: 0.3s;
                     i{
-                        color: c.$purple;
+                        color: c.$grey-dark;
+                        margin-top: 30px;
+                        margin-left: 10px;
+                        margin-right: 10px;
                     }
-                    
-
-                    
+                    &:hover{
+                        background-color: c.$bg-steps-hover;
+                        i{
+                            color: c.$purple;
+                    }    
                 }
             }       
             &__number{

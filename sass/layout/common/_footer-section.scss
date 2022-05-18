@@ -1,6 +1,5 @@
-
-@use "../utils/colors" as c;
-@use "../utils/fonts" as f; 
+@use "../../utils/colors" as c;
+@use "../../utils/fonts" as f; 
 
 footer{
     font-family: f.$roboto;
@@ -11,6 +10,8 @@ footer{
     .footer{
         &__logo{
             margin-bottom: 25px;
+            color:c.$white;
+            font-family: f.$shrikhand;
         }
         &__menu{
             li{

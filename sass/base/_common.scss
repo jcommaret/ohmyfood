@@ -1,0 +1,15 @@
+@use "../utils/fonts" as f;
+@use "../utils/colors" as c; 
+
+@use "../layout/common/header-section";
+@use "../layout/common/footer-section";
+
+:root{
+    font-family: f.$roboto;
+}
+
+a{
+    text-decoration: none;
+    color: c.$black;
+}
+

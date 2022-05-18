@@ -1,6 +1,3 @@
-.top-section{
-    padding:0px;
-}
-.place-section{
-    padding:25px;
-}
+@use "../layout/top-section";
+@use "../layout/use-section";
+@use "../layout/places-section";

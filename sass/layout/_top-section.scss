@@ -4,6 +4,7 @@
 
 .top-section{
     @include m.flex-col;
+    padding:0px;
     .location{
         @include m.flex-row-center;
         height:62px;
@@ -12,7 +13,6 @@
             line-height: 62px;
         }
     }
-
     .description{
         text-align: center;
         font-size: 16px;
@@ -44,7 +44,9 @@
             @include m.rounded;
             @include m.gradient; 
             @include m.shadow;
-            color: c.$white;     
+            color: c.$white;
+            transition-property: background-image;
+            transition-duration: 0.3s; 
         }
     }
 }

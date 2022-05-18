@@ -1,30 +1,18 @@
 /* Base */
 @use "base/reset";
-@use "base/fonts";
+@use "base/common";
 
-
-/* general */
-@use "layout/header";
-@use "layout/footer";
-/* index page */
-@use "layout/top-section";
-@use "layout/use-section";
-@use "layout/places-section";
-/* restaurant */
-@use "layout/cover-section";
+@use "pages/index";
+@use "pages/menu";
 
 /* Components */
 @use "components/root";
-@use "components/logo";
 @use "components/buttons";
 @use "components/place";
 @use "components/hearth";
 @use "components/cover";
 @use "components/plat";
-/* Pages */
 
-@use "pages/index";
-@use "pages/menu";
 /* Animations */
 @use "animations/a-button.scss";
 @use "animations/a-spinner.scss";

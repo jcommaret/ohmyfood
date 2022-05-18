@@ -6,7 +6,8 @@
     background-color: c.$grey-2;
     @include m.flex-col;
     gap:20px;
-    h2{
+    padding:25px;
+    &__heading{
         margin-top: 50px;
         margin-bottom: 10px;
         font-size: f.$large-font;
