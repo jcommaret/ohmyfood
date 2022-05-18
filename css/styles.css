@@ -456,7 +456,7 @@ a {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  animation: hideAnimation 0s ease-in 0.2s;
+  animation: hideAnimation 0s ease-in 3s;
   animation-fill-mode: forwards;
 }
 .loader:hover {
