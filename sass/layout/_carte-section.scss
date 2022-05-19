@@ -3,6 +3,17 @@
 @use "../utils/fonts" as f;
 @use "../utils/breakpoints" as b;
 
+.cover{
+    min-height:350px;
+    img{
+        width: 100%;
+    }
+    .cover__img{
+        min-height:400px;
+        max-height: 800px;
+    }
+}
+
 .carte{
     @include m.top-rounded;
     padding:25px;
