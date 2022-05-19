@@ -20,21 +20,22 @@
             margin-top: 45px;
             text-transform: uppercase;
         }
+        .separator{
+            @include m.flex-col;
+            gap:10px;
+
+            min-width:calc(100% / 3 - 10px);
+        }
+        
         @media (min-width : b.$tablet)
         {
-            gap:20px;
-            flex: 1;
             @include m.flex-row;
+            gap:10px;
             justify-content: space-between;
             .separator{
                 @include m.flex-col;
-                gap:12px;
+                max-width:calc(100% / 3 - 10px);
             }
-        }
-        .separator{
-            @include m.flex-col;
-            gap:12px;
-            min-width:calc(100% / 3 - 36px)
         }
     }
     .plat{
@@ -49,7 +50,11 @@
         justify-content: space-between;
         
         &__eat{
-            padding:20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-top:20px;
+            padding-bottom: 20px;
+            padding-left:10px;
             p{
                 white-space: nowrap;
                 transition: width 2s;
@@ -96,7 +101,28 @@
                     transform: rotate(360deg);
                 }
             } 
+            .plat__eat{
+                width: calc(100% - 135px);
+            }
         }
         
+    }
+    .order{
+        display: flex;
+        flex:1;
+        justify-content: center;
+        &__button{
+            height:50px;
+            width:220px;      
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border:none;
+            @include m.rounded;
+            @include m.gradient; 
+            @include m.shadow;
+            color: c.$white;
+            transition-property: background-image;
+            transition-duration: 0.3s; 
+        }
     }
 }

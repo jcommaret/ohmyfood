@@ -398,25 +398,24 @@ a {
   margin-top: 45px;
   text-transform: uppercase;
 }
+.carte .food .separator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: calc(33.3333333333% - 10px);
+}
 @media (min-width: 768px) {
   .carte .food {
-    gap: 20px;
-    flex: 1;
     display: flex;
     flex-direction: row;
+    gap: 10px;
     justify-content: space-between;
   }
   .carte .food .separator {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    max-width: calc(33.3333333333% - 10px);
   }
-}
-.carte .food .separator {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  min-width: calc(33.3333333333% - 36px);
 }
 .carte .plat {
   animation: fadeIn 3s linear;
@@ -431,7 +430,11 @@ a {
   font-weight: 900;
 }
 .carte .plat__eat {
-  padding: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
 }
 .carte .plat__eat p {
   white-space: nowrap;
@@ -474,6 +477,31 @@ a {
 }
 .carte .plat:hover .plat-informations__check i {
   transform: rotate(360deg);
+}
+.carte .plat:hover .plat__eat {
+  width: calc(100% - 135px);
+}
+.carte .order {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.carte .order__button {
+  height: 50px;
+  width: 220px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 0px 20px -5px #999;
+  color: #FFF;
+  transition-property: background-image;
+  transition-duration: 0.3s;
+}
+.carte .order__button:hover {
+  background-image: linear-gradient(#fface8, #ae80e5);
+  cursor: pointer;
 }
 
 /* Base */
