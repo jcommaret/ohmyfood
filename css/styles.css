@@ -91,12 +91,12 @@ footer .footer i {
   margin-right: 10px;
   width: 32px;
   height: 32px;
-  background-image: url("../../images/icons/c-reg.png");
+  background-image: url("https://jcommaret.github.io/ohmyfood/images/icons/c-reg.png");
   transition-property: background-image;
   transition-duration: 0.5s;
 }
 .hearth:hover {
-  background-image: url("../../images/icons/c-full.png");
+  background-image: url("https://jcommaret.github.io/ohmyfood/images/icons/c-full.png");
 }
 
 :root {
