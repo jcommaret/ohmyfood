@@ -309,6 +309,7 @@ a {
 .places-section .place {
   margin-top: 20px;
   flex: 1;
+  display: block;
   height: 250px;
   box-shadow: 0px 0px 20px -5px #999;
   border-radius: 25px;

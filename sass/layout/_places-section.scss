@@ -32,6 +32,7 @@
     .place{
         margin-top:20px;
         flex:1;
+        display: block;
         height:250px;
         @media (min-width : b.$desktop)
         { height: 300px;}
