@@ -91,12 +91,12 @@ footer .footer i {
   margin-right: 10px;
   width: 32px;
   height: 32px;
-  background-image: url("../../images/icons/coeur-regular.png");
+  background-image: url("../../images/icons/c-reg.png");
   transition-property: background-image;
   transition-duration: 0.5s;
 }
 .hearth:hover {
-  background-image: url("../../images/icons/coeur-full.png");
+  background-image: url("../../images/icons/c-full.png");
 }
 
 :root {
@@ -409,8 +409,8 @@ a {
   .carte .food {
     display: flex;
     flex-direction: row;
-    gap: 10px;
     justify-content: space-between;
+    gap: 10px;
   }
   .carte .food .separator {
     display: flex;

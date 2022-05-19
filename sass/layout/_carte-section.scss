@@ -40,9 +40,8 @@
         
         @media (min-width : b.$tablet)
         {
-            @include m.flex-row;
+            @include m.flex-row-sb;
             gap:10px;
-            justify-content: space-between;
             .separator{
                 @include m.flex-col;
                 max-width:calc(100% / 3 - 10px);

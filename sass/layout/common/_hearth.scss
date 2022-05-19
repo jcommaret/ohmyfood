@@ -1,11 +1,13 @@
+@use "../../utils/icons" as i;
+
 .hearth{
     margin-right: 10px;
     width:32px;
     height:32px;
-    background-image: url("../../images/icons/coeur-regular.png");
+    background-image: i.$hearth-empty;
     transition-property: background-image;
     transition-duration: 0.5s;
     &:hover{
-        background-image: url("../../images/icons/coeur-full.png");
+        background-image: i.$hearth-full;
     }
 }
