@@ -399,6 +399,11 @@ a {
   margin-top: 45px;
   text-transform: uppercase;
 }
+.carte .food .line {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+}
 .carte .food .separator {
   display: flex;
   flex-direction: column;

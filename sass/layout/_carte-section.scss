@@ -26,10 +26,15 @@
         font-size: f.$xlarge;
         @include m.flex-row-sb;
     }
-    .food{     
+    .food{    
         &__heading{
             margin-top: 45px;
-            text-transform: uppercase;
+            text-transform: uppercase;  
+        }
+        .line{
+            width:40px;
+            height:3px;
+            background-color: c.$light-green;
         }
         .separator{
             @include m.flex-col;
