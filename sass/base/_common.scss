@@ -3,7 +3,10 @@
 
 @use "../layout/common/header-section";
 @use "../layout/common/footer-section";
-@use "../layout/common/hearth";
+
+@use "../components/hearth";
+@use "../components/buttons";
+@use "../components/new";
 
 :root{
     font-family: f.$roboto;

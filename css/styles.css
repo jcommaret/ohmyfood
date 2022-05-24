@@ -118,6 +118,77 @@ footer .footer i {
   background-image: url("https://jcommaret.github.io/ohmyfood/images/icons/c-full.png");
 }
 
+.button__function {
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px -5px #999;
+  background-color: #F6F6F6;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  transition-property: background-color;
+}
+.button__function i {
+  color: #999;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.button__function:hover {
+  background-color: #f5edff;
+}
+.button__function:hover i {
+  color: #9356DC;
+}
+.button__function__number {
+  border-radius: 12px;
+  color: #FFF;
+  background-color: #9356DC;
+  height: 20px;
+  width: 20px;
+  margin-top: 28px;
+  margin-left: -10px;
+}
+.button__function__number span {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+.button__gradient {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px -5px #999;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 50px;
+  width: 220px;
+  color: #FFF;
+  transition-property: background-image;
+  transition-duration: 300ms;
+  border: none;
+}
+.button__gradient:hover {
+  background-image: linear-gradient(#fface8, #ae80e5);
+  cursor: pointer;
+}
+
+.place_new {
+  margin-left: -80px;
+  margin-top: 10px;
+  position: absolute;
+  height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 20px;
+  border-radius: 3px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 12px;
+}
+
 :root {
   font-family: "Roboto", serif;
 }
@@ -290,7 +361,7 @@ a {
     min-height: 220px;
   }
 }
-.restaurant-section .place_new {
+.restaurant-section .place __new {
   margin-left: -80px;
   margin-top: 10px;
   position: absolute;
@@ -445,63 +516,6 @@ a {
   display: flex;
   flex: 1;
   justify-content: center;
-}
-
-.button__function {
-  display: flex;
-  flex-direction: row;
-  border-radius: 25px;
-  box-shadow: 0px 0px 20px -5px #999;
-  background-color: #F6F6F6;
-  height: 80px;
-  width: 100%;
-  line-height: 80px;
-  transition-property: background-color;
-}
-.button__function i {
-  color: #999;
-  margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.button__function:hover {
-  background-color: #f5edff;
-}
-.button__function:hover i {
-  color: #9356DC;
-}
-.button__function__number {
-  border-radius: 12px;
-  color: #FFF;
-  background-color: #9356DC;
-  height: 20px;
-  width: 20px;
-  margin-top: 28px;
-  margin-left: -10px;
-}
-.button__function__number span {
-  position: absolute;
-  margin-top: -30px;
-  margin-left: 6px;
-  font-size: 12px;
-}
-
-.button__gradient {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 25px;
-  box-shadow: 0px 0px 20px -5px #999;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  height: 50px;
-  width: 220px;
-  color: #FFF;
-  transition-property: background-image;
-  transition-duration: 300ms;
-  border: none;
-}
-.button__gradient:hover {
-  background-image: linear-gradient(#fface8, #ae80e5);
-  cursor: pointer;
 }
 
 /* Base */
