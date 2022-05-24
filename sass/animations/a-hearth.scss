@@ -1,4 +1,15 @@
-.hearth{
-  transition-property: background-image;
-  transition-duration: 0.5s;
+.place_favorites{
+  i{
+    font-size: 1.6em;
+    z-index: 100;
+    cursor: pointer;
+    font-weight: 100;
+  }  
+  i:hover:before{
+    transition: all .8s ease-in-out;
+    background-clip: text;
+    font-weight: 900;
+    background-image: linear-gradient(red, yellow);
+    -webkit-text-fill-color: transparent;
+  }
 }
