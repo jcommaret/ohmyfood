@@ -4,17 +4,17 @@
 
 .loader {
     @include m.flex-col;
+    @include m.gradient;
     position: absolute;
     z-index:1000;
     overflow: hidden;
     height: 100%;
     width: 100%;
-    @include m.gradient;
     animation: hideAnimation 0s ease-in 3s;
     animation-fill-mode: forwards;
     .load{
-        margin:auto;
         @include m.flex-col;
+        margin:auto;
         justify-content: center;
     }
     i{

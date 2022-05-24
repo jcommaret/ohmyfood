@@ -2,8 +2,11 @@
 @use "base/reset";
 @use "base/common";
 
-/* Animations */
-@use "animations/loader.scss";
+/* Pages */
 @use "pages/index";
 @use "pages/menu";
 
+/* Animations */
+@use "animations/a-loader.scss";
+@use "animations/a-hearth.scss";
+@use "animations/a-buttons.scss";

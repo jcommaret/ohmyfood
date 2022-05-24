@@ -127,7 +127,10 @@ footer .footer i {
   height: 80px;
   width: 100%;
   line-height: 80px;
-  transition-property: background-color;
+}
+.button__function:hover {
+  box-shadow: 0px 0px 20px -5px #000;
+  cursor: pointer;
 }
 .button__function i {
   color: #999;
@@ -156,7 +159,6 @@ footer .footer i {
   margin-left: 6px;
   font-size: 12px;
 }
-
 .button__gradient {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
@@ -166,12 +168,14 @@ footer .footer i {
   height: 50px;
   width: 220px;
   color: #FFF;
-  transition-property: background-image;
-  transition-duration: 300ms;
   border: none;
 }
 .button__gradient:hover {
   background-image: linear-gradient(#fface8, #ae80e5);
+  cursor: pointer;
+}
+.button__gradient:hover {
+  box-shadow: 0px 0px 20px -5px #000;
   cursor: pointer;
 }
 
@@ -198,47 +202,6 @@ a {
   color: #000;
 }
 
-.loader {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: 1000;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  animation: hideAnimation 0s ease-in 3s;
-  animation-fill-mode: forwards;
-}
-.loader:hover {
-  background-image: linear-gradient(#fface8, #ae80e5);
-  cursor: pointer;
-}
-.loader .load {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.loader i {
-  font-size: 168px;
-  text-align: center;
-  color: #FFF;
-}
-.loader p {
-  margin-top: 40px;
-  font-family: "Shrikhand", sans-serif;
-  font-size: 48px;
-  text-align: center;
-  color: #FFF;
-}
-
-@keyframes hideAnimation {
-  to {
-    width: 0%;
-    height: 0%;
-  }
-}
 .top-section {
   display: flex;
   flex-direction: column;
@@ -343,6 +306,10 @@ a {
   .restaurant-section .place {
     height: 300px;
   }
+}
+.restaurant-section .place:hover {
+  box-shadow: 0px 0px 20px -5px #000;
+  cursor: pointer;
 }
 .restaurant-section .place img {
   width: 100%;
@@ -457,6 +424,10 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
+.carte .plat:hover {
+  box-shadow: 0px 0px 20px -5px #000;
+  cursor: pointer;
+}
 .carte .plat :first-child p:first-of-type {
   font-weight: 900;
 }
@@ -518,7 +489,64 @@ a {
   justify-content: center;
 }
 
+.loader {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  position: absolute;
+  z-index: 1000;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  animation: hideAnimation 0s ease-in 3s;
+  animation-fill-mode: forwards;
+}
+.loader:hover {
+  background-image: linear-gradient(#fface8, #ae80e5);
+  cursor: pointer;
+}
+.loader .load {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+.loader i {
+  font-size: 168px;
+  text-align: center;
+  color: #FFF;
+}
+.loader p {
+  margin-top: 40px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  color: #FFF;
+}
+
+@keyframes hideAnimation {
+  to {
+    width: 0%;
+    height: 0%;
+  }
+}
+.button__function {
+  transition-property: background-color;
+}
+.button__function:hover {
+  background-color: #f5edff;
+}
+.button__function:hover i {
+  color: #9356DC;
+}
+
+.button__gradient {
+  transition-property: background-image;
+  transition-duration: 300ms;
+}
+
 /* Base */
+/* Pages */
 /* Animations */
 
 /*# sourceMappingURL=styles.css.map */
