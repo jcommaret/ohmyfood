@@ -97,7 +97,7 @@ footer .footer__logo {
 footer .footer__menu li {
   line-height: 25px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   footer .footer__menu {
     display: flex;
     flex-direction: row;
@@ -260,7 +260,7 @@ a {
   flex-direction: column;
   border-radius: 25px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .function-section .function-steps {
     display: flex;
     flex-direction: row;
@@ -285,13 +285,13 @@ a {
   margin-top: -20px;
   gap: 20px;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .restaurant-section .all-places {
     display: flex;
     flex-direction: row;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .restaurant-section .places {
     gap: 20px;
     flex: 1;
@@ -307,7 +307,7 @@ a {
   box-shadow: 0px 0px 20px -5px #999;
   border-radius: 25px;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .restaurant-section .place {
     height: 300px;
   }
@@ -328,23 +328,10 @@ a {
   height: 174px;
   object-fit: cover;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .restaurant-section .place__img {
     min-height: 220px;
   }
-}
-.restaurant-section .place __new {
-  margin-left: -80px;
-  margin-top: 10px;
-  position: absolute;
-  height: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  line-height: 20px;
-  border-radius: 3px;
-  background-color: #99E2D0;
-  color: #008766;
-  font-size: 12px;
 }
 .restaurant-section .place__description {
   margin-top: 15px;
@@ -407,7 +394,7 @@ a {
   gap: 10px;
   min-width: calc(33.3333333333% - 10px);
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .carte .food {
     display: flex;
     flex-direction: row;

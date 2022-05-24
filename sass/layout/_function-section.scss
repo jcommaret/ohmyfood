@@ -1,7 +1,6 @@
 @use "../utils/mixins" as m; 
 @use "../utils/colors" as c;
 @use "../utils/fonts" as f;
-@use "../utils/breakpoints" as b;
 
 .function-section{
     padding:25px;
@@ -15,8 +14,7 @@
         gap:25px;
         @include m.flex-col;
         @include m.rounded;
-        @media (min-width : b.$tablet)
-        {
+        @include m.tablet{
             @include m.flex-row;
             font-size: 14px;
         }

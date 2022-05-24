@@ -1,4 +1,5 @@
 @use "colors" as c;
+@use "breakpoints" as b;
 
 @mixin shadow (
     $shadow : 0px 0px 20px -5px c.$grey-dark){
@@ -73,4 +74,16 @@
 @keyframes fadeIn {
     from { opacity: 0; margin-top :10px;}
       to { opacity: 1; margin-top :0px; }
+}
+
+@mixin tablet {
+    @media screen and (min-width: map-get(b.$breakpoints, tablet)){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width: map-get(b.$breakpoints, desktop)){
+        @content;
+    }
 }

@@ -17,14 +17,12 @@
     .all-places{
         margin-top:-20px;
         gap:20px;
-        @media (min-width : b.$desktop)
-        {
+        @include m.desktop{
             @include m.flex-row;
         }
     }
     .places{
-        @media (min-width : b.$tablet)
-        {
+        @include m.tablet{
             gap:20px;
             flex: 1;
             @include m.flex-row;
@@ -35,8 +33,9 @@
         flex:1;
         display: block;
         height:250px;
-        @media (min-width : b.$desktop)
-        { height: 300px;}
+        @include m.desktop{
+            height: 300px;
+        }
         @include m.shadow;
         @include m.rounded;
         
@@ -49,28 +48,12 @@
             max-width: 100%;
             background-size:cover;
             background-position: center center;
-            @media (min-width : b.$desktop)
-            {
+            @include m.desktop{
                 min-height: 220px;
-            } 
+            }
             height:174px;        
             object-fit: cover;
         }
-        
-        __new{
-            margin-left:-80px;
-            margin-top: 10px;
-            position:absolute;
-            height: 20px;
-            padding-left: 10px;
-            padding-right: 10px;
-            line-height: 20px;
-            border-radius: 3px;
-            background-color: c.$light-green;
-            color:c.$dark-green;
-            font-size: 12px;
-        }
-        
         &__description{
             margin-top: 15px;
             margin-left: 15px;
