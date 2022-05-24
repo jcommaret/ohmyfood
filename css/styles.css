@@ -504,6 +504,16 @@ a {
   margin: auto;
   justify-content: center;
 }
+.loader .loader-animation {
+  margin-top: 20px;
+  margin: auto;
+  border: 16px solid white;
+  border-top: 16px solid #9356DC;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
 .loader i {
   font-size: 168px;
   text-align: center;
