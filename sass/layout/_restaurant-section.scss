@@ -3,7 +3,7 @@
 @use "../utils/fonts" as f;
 @use "../utils/breakpoints" as b;
 
-.places-section{
+.restaurant-section{
     background-color: c.$grey-2;
     @include m.flex-col;
     gap:20px;

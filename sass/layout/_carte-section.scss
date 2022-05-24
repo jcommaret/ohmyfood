@@ -39,7 +39,6 @@
         .separator{
             @include m.flex-col;
             gap:10px;
-
             min-width:calc(100% / 3 - 10px);
         }
         
@@ -72,7 +71,7 @@
             padding-left:10px;
             p{
                 white-space: nowrap;
-                transition: width 2s;
+                transition: width 0.4s;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
@@ -96,13 +95,13 @@
                 line-height: 72px;
                 background-color: c.$light-green;
                 transition-property: width;
-                transition-duration: 2s;
+                transition-duration: 400ms;
                 overflow: hidden;
                 i{
                     padding:10px;
                     background-color: white;
                     color:c.$light-green;
-                    transition: transform 2s;
+                    transition: transform 400ms;
                     border-radius:25px;
                     color:c.$light-green;    
                 }   
@@ -126,18 +125,5 @@
         display: flex;
         flex:1;
         justify-content: center;
-        &__button{
-            height:50px;
-            width:220px;      
-            margin-top: 40px;
-            margin-bottom: 40px;
-            border:none;
-            @include m.rounded;
-            @include m.gradient; 
-            @include m.shadow;
-            color: c.$white;
-            transition-property: background-image;
-            transition-duration: 0.3s; 
-        }
     }
 }

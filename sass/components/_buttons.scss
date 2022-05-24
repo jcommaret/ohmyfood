@@ -1,0 +1,57 @@
+
+@use "../utils/mixins" as m; 
+@use "../utils/colors" as c;
+@use "../utils/fonts" as f;
+@use "../utils/breakpoints" as b;
+
+.button__function{
+    @include m.flex-row;
+    @include m.rounded;
+    @include m.shadow;
+    background-color: c.$grey-2;
+    height:80px;
+    width:100%;
+    line-height: 80px;
+    transition-property: background-color;
+    i{
+        color: c.$grey-dark;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &:hover{
+        background-color: c.$bg-steps-hover;
+        i{
+            color: c.$purple;
+        }    
+    }
+    &__number{
+        @include m.rounded(12px);
+        color: c.$white;
+        background-color: c.$purple;
+        height:20px;
+        width:20px;
+        margin-top: 28px;
+        margin-left: -10px;
+        span{
+            position: absolute;
+            margin-top: -30px;
+            margin-left: 6px;
+            font-size: f.$small-font;
+        }
+    }
+}
+
+.button__gradient{
+    @include m.gradient;
+    @include m.rounded;
+    @include m.shadow;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    height:50px;
+    width:220px;      
+    color: c.$white;
+    transition-property: background-image;
+    transition-duration: 300ms;
+    border:none;
+}

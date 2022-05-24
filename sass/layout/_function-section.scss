@@ -1,0 +1,22 @@
+@use "../utils/mixins" as m; 
+@use "../utils/colors" as c;
+@use "../utils/fonts" as f;
+@use "../utils/breakpoints" as b;
+
+.function-section{
+    padding:25px;
+    &__heading{
+        margin-bottom:30px;
+        font-size: f.$large-font;
+        font-weight: f.$bold;
+    }
+    .function-steps{
+        gap:25px;
+        @include m.flex-col;
+        @include m.rounded;
+        @media (min-width : b.$tablet)
+        {
+            @include m.flex-row;
+        }
+    }
+}

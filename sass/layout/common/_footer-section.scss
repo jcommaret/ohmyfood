@@ -1,5 +1,7 @@
 @use "../../utils/colors" as c;
 @use "../../utils/fonts" as f; 
+@use "../../utils/mixins" as m; 
+@use "../../utils/breakpoints" as b; 
 
 footer{
     font-family: f.$roboto;
@@ -16,6 +18,13 @@ footer{
         &__menu{
             li{
                 line-height: 25px;
+            }
+            @media (min-width : b.$tablet)
+            {
+                @include m.flex-row;
+                li{
+                    margin-right:25px;
+                }
             }
         }
         i{
