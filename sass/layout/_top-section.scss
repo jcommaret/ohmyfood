@@ -7,31 +7,31 @@
     padding:0px;
     .location{
         @include m.flex-row-center;
-        height:62px;
+        height:50px;
         background-color:c.$grey-1;
         .here{
-            line-height: 62px;
+            line-height: 50px;
         }
     }
     .description{
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
         line-height:20px;
         background-color:c.$grey-2;
         height: 287px;    
         &__heading{
-            font-size: f.$large-font;
-            font-weight: f.$bold;
+            font-size: f.$xlarge;
+            font-weight: f.$semi-bold;
             @include m.margin-auto;
-            width: 200px;
-            padding-top:42px;
+            width: 245px;
+            padding-top:35px;
             line-height:30px;
         }
         &__text{
             @include m.margin-auto;
             width: 285px;
-            margin-top:20px;
-            line-height:20px;
+            margin-top:18px;
+            line-height:18px;
             font-size: f.$medium-font;
             font-weight: f.$light;
         }

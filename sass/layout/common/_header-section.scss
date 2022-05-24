@@ -1,11 +1,17 @@
 @use "../../utils/fonts" as f; 
 @use "../../utils/colors" as c;
- 
+@use "../../utils/mixins" as m;
+
 header{
     display: flex;
     flex-direction: row;
     height:62px;
+    position: relative;
+    &.home{
+        box-shadow: 0px 5px 5px #DDD;
+    }
 }
+
 
 .header{
     &__back{
@@ -16,7 +22,7 @@ header{
     }
     &__logo{
         font-family: f.$shrikhand;
-        font-size: 32px;
+        font-size: 28px;
         margin-left:auto;
         margin-right: auto;
         color:c.$black;

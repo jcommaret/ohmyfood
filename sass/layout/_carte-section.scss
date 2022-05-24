@@ -61,14 +61,14 @@
         }
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        
+        justify-content: space-between;  
         &__eat{
             overflow: hidden;
             text-overflow: ellipsis;
             padding-top:20px;
             padding-bottom: 20px;
             padding-left:10px;
+            line-height: 22px;
             p{
                 white-space: nowrap;
                 transition: width 0.4s;
