@@ -1,11 +1,24 @@
-@use "../utils/icons" as i;
+@use "../utils/mixins" as m;
 
 .hearth{
-    margin-right: 10px;
-    width:32px;
-    height:32px;
-    background-image: i.$hearth-empty;
-    &:hover{
-        background-image: i.$hearth-full;
+    display: block;
+    margin-right:10px;
+    height:30px;
+    width:30px;
+    i{
+        left: 70vmin;
+        top:2vmin;
+        z-index: 100;
+        cursor: pointer;
+        font-weight: 100;
+        height: 0px;
+    }   
+    i:hover:before{
+        transition: all ease-in-out;
+        font-weight: 900;
+        @include m.gradient;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        height: 50px;
     }
 }
