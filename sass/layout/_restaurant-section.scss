@@ -21,6 +21,7 @@
         }
     }
     .places{
+        z-index: 0;
         @include m.tablet{
             gap:20px;
             flex: 1;
@@ -56,6 +57,7 @@
         &__description{
             margin-top: 15px;
             margin-left: 15px;
+            margin-right: 15px;
             font-size: 16px;
             line-height:20px;
             @include m.flex-row-sb;
