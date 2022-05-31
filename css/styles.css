@@ -129,31 +129,13 @@ footer .footer i {
   stroke-width: 50;
   cursor: pointer;
   /* position: absolute;
-   right: 1.5rem;
-   bottom: 2rem;*/
+  right: 1.5rem;
+  bottom: 2rem;*/
 }
 .heart .icon svg {
   overflow: visible;
   width: 2rem;
   /* changed from 1.6 to 5.6 */
-}
-.heart .icon .heart-main:hover path {
-  animation: fill-animation 1s ease-in-out forwards;
-  stroke: none;
-  transform-origin: bottom;
-}
-.heart .icon :hover {
-  animation: grow 1s;
-}
-@keyframes fill-animation {
-  0% {
-    fill: url(#FillGradient);
-    transform: scale(5%);
-  }
-  100% {
-    fill: url(#FillGradient);
-    transform: scale(100%);
-  }
 }
 
 .button__gradient {
@@ -593,6 +575,25 @@ a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.heart .icon .heart-main:hover path {
+  animation: fill-animation 1s ease-in-out forwards;
+  stroke: none;
+  transform-origin: bottom;
+}
+.heart .icon :hover {
+  animation: grow 1s;
+}
+
+@keyframes fill-animation {
+  0% {
+    fill: url(#FillGradient);
+    transform: scale(5%);
+  }
+  100% {
+    fill: url(#FillGradient);
+    transform: scale(100%);
   }
 }
 .button__function {

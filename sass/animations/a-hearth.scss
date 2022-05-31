@@ -1,0 +1,21 @@
+.heart{
+  .icon .heart-main:hover path {
+    animation: fill-animation 1s ease-in-out forwards;
+    stroke: none;
+    transform-origin: bottom;
+  }
+  .icon :hover{
+    animation:grow 1s;
+  }
+}
+@keyframes fill-animation {
+   0%{
+      fill: url(#FillGradient);
+      transform: scale(5%);
+      
+   }
+   100% {
+      fill: url(#FillGradient);
+      transform: scale(100%);
+   }  
+}
