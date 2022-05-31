@@ -21,26 +21,24 @@
       .icon .heart-main:hover path {
         animation: fill-animation 1s ease-in-out forwards;
         stroke: none;
-        transform:scale(1.05)
+        transform-origin: bottom;
+      }
+      .icon :hover{
+         animation:grow 1s;
+      }
+      @keyframes fill-animation {
+         0%{
+            fill: url(#FillGradient);
+            transform: scale(5%);
+            
+         }
+         100% {
+            fill: url(#FillGradient);
+            transform: scale(100%);
+         }  
       }
       
-      @keyframes fill-animation {
-        0%{
-           fill-opacity: 0.1;
-        }
-        10% {
-           fill: url(#FillGradient);
-           fill-opacity: 0.1;
-        }
-        80% {
-           fill: url(#FillGradient);
-           fill-opacity: 1;
-        }
-        100% {
-           fill: url(#FillGradient);
-           fill-opacity: 1;
-        }
-      }
+      
 }
 
 

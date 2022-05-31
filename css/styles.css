@@ -85,7 +85,10 @@ header.home {
 footer {
   font-family: "Roboto", serif;
   font-weight: 400;
-  padding: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: #353535;
   color: #FFF;
 }
@@ -93,6 +96,13 @@ footer .footer__logo {
   margin-bottom: 25px;
   color: #FFF;
   font-family: "Shrikhand", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  footer .footer__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 footer .footer__menu li {
   line-height: 25px;
@@ -130,23 +140,19 @@ footer .footer i {
 .heart .icon .heart-main:hover path {
   animation: fill-animation 1s ease-in-out forwards;
   stroke: none;
-  transform: scale(1.05);
+  transform-origin: bottom;
+}
+.heart .icon :hover {
+  animation: grow 1s;
 }
 @keyframes fill-animation {
   0% {
-    fill-opacity: 0.1;
-  }
-  10% {
     fill: url(#FillGradient);
-    fill-opacity: 0.1;
-  }
-  80% {
-    fill: url(#FillGradient);
-    fill-opacity: 1;
+    transform: scale(5%);
   }
   100% {
     fill: url(#FillGradient);
-    fill-opacity: 1;
+    transform: scale(100%);
   }
 }
 
@@ -380,7 +386,7 @@ a {
   font-weight: 900;
 }
 .restaurant-section .place__text {
-  font-weight: 100;
+  font-weight: 400;
 }
 .restaurant-section .place__favorites i {
   font-size: 30px;
@@ -487,7 +493,7 @@ a {
   display: flex;
   justify-content: center;
   width: 0px;
-  line-height: 72px;
+  line-height: 80px;
   background-color: #99E2D0;
   transition-property: width;
   transition-duration: 400ms;
