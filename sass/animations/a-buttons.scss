@@ -2,13 +2,7 @@
 
 .button__function{
     transition-property: background-color;
-    &:hover{
-        background-color: c.$bg-steps-hover;
-        i{
-            color: c.$purple;
-        }    
-    }
-    
+    transition-duration: 300ms;
 }
 
 .button__gradient{    

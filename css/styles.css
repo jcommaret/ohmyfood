@@ -550,12 +550,6 @@ a {
   color: #FFF;
 }
 
-@keyframes hideAnimation {
-  to {
-    width: 0%;
-    height: 0%;
-  }
-}
 .loader-animation {
   margin-top: 20px;
   margin: auto;
@@ -575,6 +569,12 @@ a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes hideAnimation {
+  to {
+    width: 0%;
+    height: 0%;
   }
 }
 .heart .icon .heart-main:hover path {
@@ -598,12 +598,7 @@ a {
 }
 .button__function {
   transition-property: background-color;
-}
-.button__function:hover {
-  background-color: #f5edff;
-}
-.button__function:hover i {
-  color: #9356DC;
+  transition-duration: 300ms;
 }
 
 .button__gradient {

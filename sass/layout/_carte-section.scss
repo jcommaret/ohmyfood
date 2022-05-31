@@ -54,12 +54,10 @@
         @include m.fadeInAnimation;
         @include m.shadow;
         @include m.rounded;
+        @include m.flex-row-sb;
         :first-child p:first-of-type{
             font-weight: f.$bold;
         }
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;  
         &__eat{
             overflow: hidden;
             text-overflow: ellipsis;
