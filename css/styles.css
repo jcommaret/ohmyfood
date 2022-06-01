@@ -382,7 +382,6 @@ a {
 }
 .cover .cover__img {
   min-height: 400px;
-  max-height: 500px;
 }
 
 .carte {
@@ -390,7 +389,7 @@ a {
   border-top-left-radius: 25px;
   padding: 25px;
   position: relative;
-  margin-top: -50px;
+  margin-top: -200px;
   background-color: #F6F6F6;
 }
 .carte__heading {
