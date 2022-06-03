@@ -7,7 +7,7 @@
 @use "../components/hearth";
 @use "../components/buttons";
 @use "../components/new";
-
+@use "../components/loader";
 :root{
     font-family: f.$roboto;
 }

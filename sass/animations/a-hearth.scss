@@ -1,18 +1,30 @@
 .heart{
-  .icon .heart-main:hover path {
-    animation: fill-animation 1s ease-in-out forwards;
-    stroke: none;
-    transform-origin: bottom;
+  path{
+    &.fill{
+      stroke-width: 0px;
+    }
+    &.empty{
+      stroke-width: 25px;
+    }
   }
-  .icon :hover{
-    animation:grow 1s;
+  .icon .heart-main:hover{
+    path{
+      &.fill{
+        animation: fill-animation 1s ease-in-out forwards;      
+        transform-origin: bottom;
+      }
+      &.empty{
+        stroke-width: 1px; 
+        transition: all 1s 0.5s;   
+      }
+    }
   }
 }
+
 @keyframes fill-animation {
    0%{
       fill: url(#FillGradient);
-      transform: scale(5%);
-      
+      transform: scale(5%);      
    }
    100% {
       fill: url(#FillGradient);
