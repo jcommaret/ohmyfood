@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <title>Oh My Food ! - A la Française</title>
+  <title>Oh My Food ! - La note enchantée</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!--Media queries-->
-  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <!--Font Awesome import-->
   <script src="https://kit.fontawesome.com/a4a67ad27f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -13,7 +13,7 @@
 
 <body>
       <header>
-        <a class="header__back" href="../index.html"> 
+        <a class="header__back" href="index.html"> 
           <i class="fa-solid fa-arrow-left"></i>
         </a>
         <div class="header__logo"> 
@@ -23,15 +23,15 @@
       
     <main class="menu">
       <div class="cover">
-        <img class="cover__img" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française" />
+        <img class="cover__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" />
       </div>
   
       <section class="carte">
         <div class="carte__heading">
-          <h2>A la française</h2>
+          <h2>La note enchantée</h2>
           <div class="heart">
             <div class="icon">
-              <svg class="heart-main" viewBox="0 0 512 512" width="30">
+              <svg class="heart-main" viewBox="0 0 512 512" width="30" title="heart">
                 <path class="fill" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /> 
                 <path class="empty" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /> 
                 <defs>
@@ -49,10 +49,10 @@
           <div class="separator">
             <h3 class="food__heading">Entrées</h3>
             <div class="line"></div>
-            <section class="plat">
+            <div class="plat">
               <div class="plat__eat">
-                <p>Tartare de poulpe acidulé</p>
-                <p>Aux zestes d'orange</p> 
+                <p>Ravioles de foie gras</p>
+                <p>Accompagnés de leur crème à la truffe</p> 
               </div>
               <div class="plat-informations">
                 <div class="plat-informations__price">
@@ -62,12 +62,12 @@
                 <p><i class="fa-solid fa-check"></i></p>
                 </div>
               </div>
-            </section>
+            </div>
             
-            <section class="plat">
+            <div class="plat">
               <div class="plat__eat">
-                <p>Velouté de légumes d'antan</p>
-                <p>Carotte, panais, topinambour</p> 
+                <p>Caviar osciètre</p>
+                <p>Sur blini à la farine de blé noir</p> 
               </div>
               <div class="plat-informations">
                 <div class="plat-informations__price">
@@ -77,12 +77,12 @@
                   <p><i class="fa-solid fa-check"></i></p>
                 </div>
               </div>
-            </section>
+            </div>
       
-            <section class="plat">
+            <div class="plat">
               <div class="plat__eat">
-                <p>Soupe à l'oignon</p>
-                <p>Revisitée</p> 
+                <p>Homard et espuma de potiron</p>
+                <p>Mariné aux zestes d'orange</p> 
               </div>
               
               <div class="plat-informations">
@@ -94,17 +94,34 @@
                 </div>  
               </div>
 
-            </section>
+            </div>
+
+            <div class="plat">
+              <div class="plat__eat">
+                <p>Foie gras de canard cuit entier</p>
+                <p>Confiture de figue et pain toasté</p> 
+              </div>
+              
+              <div class="plat-informations">
+                <div class="plat-informations__price">
+                  <p>35€</p>
+                </div>
+                <div class="plat-informations__check">
+                  <p><i class="fa-solid fa-check"></i></p>
+                </div>  
+              </div>
+
+            </div>
           </div>
           
           <div class="separator">
             <h3 class="food__heading">Plats</h3>
             <div class="line"></div>
-            <section class="plat">
+            <div class="plat">
             
               <div class="plat__eat">
-                <p>Coquilles Saint-Jacques</p>
-                <p>Accompagnées d'une purée de panais</p> 
+                <p>Noix de coquilles Saint-Jacques</p>
+                <p>Sur lit de purée de céleri-rave</p> 
               </div>
               
               <div class="plat-informations">
@@ -116,11 +133,11 @@
                 </div>  
               </div>
               
-            </section>
-            <section class="plat">
+            </div>
+            <div class="plat">
               <div class="plat__eat">
-                <p>Magret de canard</p>
-                <p>Et parmentier de pommes de terre</p> 
+                <p>Langoustine poêlée</p>
+                <p>Purée de patate douce</p> 
               
               </div>
               <div class="plat-informations">
@@ -132,12 +149,12 @@
                 </div>  
               </div>
               
-            </section>
+            </div>
             
-            <section class="plat">
+            <div class="plat">
               <div class="plat__eat">
-                <p>Pigeonneau d’Ille-et-Vilaine</p>
-                <p>Sur son lit de gnocchis aux légumes</p>
+                <p>Mijoté de queue de boeuf </p>
+                <p>Et riz sauvage aux zestes de citron</p>
               </div>
               
               <div class="plat-informations">
@@ -148,18 +165,18 @@
                   <p><i class="fa-solid fa-check"></i></p>
                 </div>  
               </div>
-            </section>
+            </div>
 
           </div>
           
           <div class="separator">     
             <h3 class="food__heading">Desserts</h3>
             <div class="line"></div>
-            <section class="plat">
+            <div class="plat">
               
               <div class="plat__eat">
-                <p>Pétales de violettes glacés</p>
-                <p>Et purée de noisettes</p>
+                <p>Macaron noisette et chocolat</p>
+                <p>Glace au caramel brun et sel de Guérande</p>
               </div>
               
               <div class="plat-informations">
@@ -170,30 +187,30 @@
                   <p><i class="fa-solid fa-check"></i></p>
                 </div>  
               </div>
-            </section>
+            </div>
               
-            <section class="plat">
+            <div class="plat">
               <div class="plat__eat">
-                <p>Fondant au chocolat</p>
-                <p>Revisité</p> 
+                <p>Baba au rhum revisité</p>
+                <p>Avec son coulis de citron</p> 
               </div>
               
               <div class="plat-informations">
                 <div class="plat-informations__price">
-                  <p>23€</p>
+                  <p>22€</p>
                 </div>
                 <div class="plat-informations__check">
                   <p><i class="fa-solid fa-check"></i></p>
                 </div>  
               </div>
 
-            </section>
+            </div>
             
-            <section class="plat">
+            <div class="plat">
               
               <div class="plat__eat">
-                <p>Millefeuille croustillant</p>
-                <p>Myrtilles et pâte d’amande</p> 
+                <p>Tarte au citron meringuée</p>
+                <p>Déstructurée</p> 
               </div>
               
               <div class="plat-informations">
@@ -206,13 +223,13 @@
                 </div>  
               </div>
 
-            </section>
+            </div>
           </div>
         </div>  
       
-        <section class="order">
+        <div class="order">
           <button class="button__gradient">Commander</button>
-        </section>
+        </div>
     
     </section>
   </main>
