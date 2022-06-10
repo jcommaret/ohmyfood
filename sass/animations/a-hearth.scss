@@ -29,5 +29,37 @@
    100% {
       fill: url(#FillGradient);
       transform: scale(100%);
-   }  
+   }
+   0%{
+    fill: url(#FillGradient1);
+    transform: scale(5%);      
+ }
+ 100% {
+    fill: url(#FillGradient1);
+    transform: scale(100%);
+ } 
+ 0%{
+  fill: url(#FillGradient2);
+  transform: scale(5%);      
+  }
+  100% {
+    fill: url(#FillGradient2);
+    transform: scale(100%);
+  }
+  0%{
+    fill: url(#FillGradient3);
+    transform: scale(5%);      
+  }
+  100% {
+    fill: url(#FillGradient3);
+    transform: scale(100%);
+  }  
+  0%{
+    fill: url(#FillGradient4);
+    transform: scale(5%);      
+  }
+  100% {
+    fill: url(#FillGradient4);
+    transform: scale(100%);
+  }   
 }
