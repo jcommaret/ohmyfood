@@ -1,11 +1,13 @@
-import { Outlet } from "react-router-dom";
+import "./../styles/sass/main.scss";
 
+import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer";
 function Root() {
   return (
-    <div className="App">
-      Layout
+    <>
       <Outlet />
-    </div>
+      <Footer />
+    </>
   );
 }
 

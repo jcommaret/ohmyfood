@@ -1,8 +1,15 @@
+import { Helmet } from "react-helmet";
+
 function Restaurant() {
   return (
-    <div id="Restaurant">
-      <p>Restaurant</p>
-    </div>
+    <>
+      <Helmet>
+        <title>Oh My Food - Restaurant : </title>
+      </Helmet>
+      <div id="Restaurant">
+        <p>Restaurant</p>
+      </div>
+    </>
   );
 }
 
