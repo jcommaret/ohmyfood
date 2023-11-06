@@ -1,31 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-  <title>Oh My Food !</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!--Media queries-->
-  <link rel="stylesheet" href="css/styles.css" />
-  <!--Font Awesome import-->
-  <script src="https://kit.fontawesome.com/a4a67ad27f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
+  <head>
+    <title>Oh My Food !</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!--Media queries-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--Font Awesome import-->
+    <script
+      src="https://kit.fontawesome.com/a4a67ad27f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="loader">
       <div class="load">
-        <i class="fas fa-hamburger"></i> 
+        <i class="fas fa-hamburger"></i>
         <p>Chargement...</p>
         <div class="loader-animation"></div>
       </div>
     </div>
 
     <header class="home">
-      <div class="header__logo"> 
+      <div class="header__logo">
         <h1>ohmyfood</h1>
       </div>
     </header>
-      
+
     <main class="index">
       <section class="top-section">
         <div class="location">
@@ -34,44 +45,52 @@
             <span>Paris, Belleville</span>
           </div>
         </div>
-      
+
         <div class="description">
-          <h2 class="description__heading">Reservez le menu qui vous convient</h2>
-          <p class="description__text">Découvrez des restaurants d'exception selectionnés par nos soins.</p> 
+          <h2 class="description__heading">
+            Reservez le menu qui vous convient
+          </h2>
+          <p class="description__text">
+            Découvrez des restaurants d'exception selectionnés par nos soins.
+          </p>
           <button class="button__gradient">Explorer nos restaurants</button>
         </div>
       </section>
 
       <section class="function-section">
         <h2 class="function-section__heading">Fonctionnement</h2>
-        
-        <div class="function-steps step-animation">  
+
+        <div class="function-steps step-animation">
           <div class="button__function">
             <div class="button__function__number"><span>1</span></div>
             <i class="fa-solid fa-mobile"></i>
             <div class="step__text">Choisissez votre restaurant</div>
           </div>
-      
+
           <div class="button__function">
             <div class="button__function__number"><span>2</span></div>
             <i class="fa-solid fa-bars"></i>
             <div class="function_text">Composez votre menu</div>
           </div>
-              
+
           <div class="button__function">
             <div class="button__function__number"><span>3</span></div>
             <i class="fa-solid fa-store"></i>
             <div class="function_text">Dégustez au restaurant</div>
           </div>
-        </div>  
-      </section>    
-      
+        </div>
+      </section>
+
       <section class="restaurant-section">
         <h2 class="restaurant-section__heading">Restaurants</h2>
-        <div class="all-places"> 
-        <div class="places">
-          <a class="place" href="la-palette-du-gout.html">
-              <img class="place__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />
+        <div class="all-places">
+          <div class="places">
+            <a class="place" href="la-palette-du-gout.html">
+              <img
+                class="place__img"
+                src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="La palette du goût"
+              />
               <span class="place_new">Nouveau</span>
               <div class="place__description">
                 <div class="place__information">
@@ -80,25 +99,38 @@
                 </div>
                 <div class="place__favorites">
                   <div class="heart">
-                    <div class="icon">                    
+                    <div class="icon">
                       <svg class="heart-main" viewBox="0 0 512 512" width="30">
-                          <path class="fill" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /> 
-                          <path class="empty" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /> 
-                          <defs>
-                            <linearGradient id="FillGradient1" gradientTransform="rotate(90)">
-                              <stop offset="2%" stop-color="#9356DC"/>
-                              <stop offset="98%" stop-color="#FF79DA" />
-                            </linearGradient>
-                          </defs>
+                        <path
+                          class="fill"
+                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                        />
+                        <path
+                          class="empty"
+                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="FillGradient1"
+                            gradientTransform="rotate(90)"
+                          >
+                            <stop offset="2%" stop-color="#9356DC" />
+                            <stop offset="98%" stop-color="#FF79DA" />
+                          </linearGradient>
+                        </defs>
                       </svg>
                     </div>
                   </div>
                 </div>
               </div>
             </a>
-          
+
             <a class="place" href="la-note-enchantee.html">
-              <img class="place__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" />
+              <img
+                class="place__img"
+                src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="La note enchantée"
+              />
               <span class="place_new">Nouveau</span>
               <div class="place__description">
                 <div class="place__information">
@@ -109,88 +141,133 @@
                   <div class="heart">
                     <div class="icon">
                       <svg class="heart-main" viewBox="0 0 512 512" width="30">
-                        <path class="fill" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /> 
-                        <path class="empty" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /> 
+                        <path
+                          class="fill"
+                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                        />
+                        <path
+                          class="empty"
+                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                        />
                         <defs>
-                          <linearGradient id="FillGradient2" gradientTransform="rotate(90)">
-                            <stop offset="2%" stop-color="#9356DC"/>
+                          <linearGradient
+                            id="FillGradient2"
+                            gradientTransform="rotate(90)"
+                          >
+                            <stop offset="2%" stop-color="#9356DC" />
                             <stop offset="98%" stop-color="#FF79DA" />
                           </linearGradient>
                         </defs>
-                    </svg>
+                      </svg>
                     </div>
                   </div>
                 </div>
               </div>
             </a>
-        </div>
-      
-        <div class="places">
-          <a class="place" href="a-la-francaise.html">
-              <img class="place__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française" />
+          </div>
+
+          <div class="places">
+            <a class="place" href="a-la-francaise.html">
+              <img
+                class="place__img"
+                src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="A la française"
+              />
               <div class="place__description">
                 <div class="place__information">
                   <h4 class="place__heading">A la française</h4>
                   <p class="place__text">Cité rouge</p>
-                 </div>
-                  <div class="place__favorites">
+                </div>
+                <div class="place__favorites">
                   <div class="heart">
                     <div class="icon">
                       <svg class="heart-main" viewBox="0 0 512 512" width="30">
-                        <path class="fill" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /> 
-                        <path class="empty" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /> 
+                        <path
+                          class="fill"
+                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                        />
+                        <path
+                          class="empty"
+                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                        />
                         <defs>
-                          <linearGradient id="FillGradient3" gradientTransform="rotate(90)">
-                            <stop offset="2%" stop-color="#9356DC"/>
+                          <linearGradient
+                            id="FillGradient3"
+                            gradientTransform="rotate(90)"
+                          >
+                            <stop offset="2%" stop-color="#9356DC" />
                             <stop offset="98%" stop-color="#FF79DA" />
                           </linearGradient>
                         </defs>
-                    </svg>
+                      </svg>
                     </div>
                   </div>
                 </div>
               </div>
-          </a>
+            </a>
 
-          <a class="place" href="le-delice-des-sens.html">
-            <img class="place__img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
-            <div class="place__description">
-              <div class="place__information">
-                <h4 class="place__heading">Le délice des sens</h4>
-                <p class="place__text">Folie Méricourt</p>
-              </div>
-              
-              <div class="place__favorites">
-                <div class="heart">
-                  <div class="icon">
-                    <svg class="heart-main" viewBox="0 0 512 512" width="30">
-                      <path class="fill" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /> 
-                      <path class="empty" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" /> 
-                      <defs>
-                        <linearGradient id="FillGradient4" gradientTransform="rotate(90)">
-                          <stop offset="2%" stop-color="#9356DC"/>
-                          <stop offset="98%" stop-color="#FF79DA" />
-                        </linearGradient>
-                      </defs>
-                  </svg>
+            <a class="place" href="le-delice-des-sens.html">
+              <img
+                class="place__img"
+                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Le délice des sens"
+              />
+              <div class="place__description">
+                <div class="place__information">
+                  <h4 class="place__heading">Le délice des sens</h4>
+                  <p class="place__text">Folie Méricourt</p>
+                </div>
+
+                <div class="place__favorites">
+                  <div class="heart">
+                    <div class="icon">
+                      <svg class="heart-main" viewBox="0 0 512 512" width="30">
+                        <path
+                          class="fill"
+                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                        />
+                        <path
+                          class="empty"
+                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="FillGradient4"
+                            gradientTransform="rotate(90)"
+                          >
+                            <stop offset="2%" stop-color="#9356DC" />
+                            <stop offset="98%" stop-color="#FF79DA" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
       </section>
     </main>
-  
+
     <footer class="footer">
       <h1 class="footer__logo">ohmyfood</h1>
       <ul class="footer__menu">
-        <li><a href="#"><span><i class="fa-solid fa-utensils"></i></span> Proposez un restaurant</a></li> 
-        <li><a href="#"><span><i class="fa-solid fa-handshake-angle"></i></span>  Devenir partenaire</a></li>
+        <li>
+          <a href="#"
+            ><span><i class="fa-solid fa-utensils"></i></span> Proposez un
+            restaurant</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span><i class="fa-solid fa-handshake-angle"></i></span> Devenir
+            partenaire</a
+          >
+        </li>
         <li><a href="#">Mentions légales</a></li>
-        <li><a href="mailto:hello@openclassroom.com">Contact</a></li>       
+        <li><a href="mailto:hello@openclassroom.com">Contact</a></li>
       </ul>
     </footer>
-    </footer>
-</body>
+  </body>
+</html>
