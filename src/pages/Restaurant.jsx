@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Heart from "../components/Heart";
 import restaurants from "../assets/data/restaurants";
+import Button from "../components/Button";
 
 const ImagePath = process.env.PUBLIC_URL + "/images/restaurants/";
 
@@ -119,9 +120,7 @@ function Restaurant() {
             </div>
           </div>
 
-          <section className="order">
-            <button className="button__gradient">Commander</button>
-          </section>
+          <Button></Button>
         </section>
       </main>
     </>
