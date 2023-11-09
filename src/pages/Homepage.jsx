@@ -10,6 +10,7 @@ function Homepage() {
   return (
     <>
       <Loader />
+
       <HelmetProvider>
         <Helmet>
           <title>Oh My Food !</title>
