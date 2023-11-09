@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 
 import Header from "../components/Header";
 import Heart from "../components/Heart";
-import restaurants from "../assets/data/restaurants";
 import Button from "../components/Button";
+import restaurants from "../assets/data/restaurants";
 
 const ImagePath = process.env.PUBLIC_URL + "/images/restaurants/";
 
