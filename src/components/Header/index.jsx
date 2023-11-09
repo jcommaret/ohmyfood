@@ -1,7 +1,14 @@
-function Header() {
+import { Link } from "react-router-dom";
+
+function Header({ isNotHomepage }) {
   return (
-    <header class="home">
-      <div class="header__logo">
+    <header className="home">
+      {isNotHomepage && (
+        <Link className="header__back" to="/">
+          <i className="fa-solid fa-arrow-left"></i>
+        </Link>
+      )}
+      <div className="header__logo">
         <h1>ohmyfood</h1>
       </div>
     </header>
