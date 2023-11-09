@@ -5,10 +5,13 @@ import Header from "../components/Header";
 import Heart from "../components/Heart";
 import restaurants from "../assets/data/restaurants";
 
+const ImagePath = process.env.PUBLIC_URL + "/images/restaurants/";
+
 function Restaurant() {
   const id = useParams().id;
   const restaurant = restaurants.find((restaurant) => restaurant.id === id);
   const name = restaurant.title;
+  const cover = restaurant.cover;
   const entrees = restaurant.entrees;
   const plats = restaurant.plats;
   const desserts = restaurant.desserts;
@@ -88,7 +91,7 @@ function Restaurant() {
 
       <main className="menu">
         <div className="cover">
-          <img className="cover__img" alt={name} />
+          <img className="cover__img" alt={name} src={`${ImagePath + cover}`} />
         </div>
 
         <section className="carte">
