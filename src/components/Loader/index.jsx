@@ -1,10 +1,10 @@
 function Loader() {
   return (
-    <div class="loader">
-      <div class="load">
-        <i class="fas fa-hamburger"></i>
+    <div className="loader">
+      <div className="load">
+        <i className="fas fa-hamburger"></i>
         <p>Chargement...</p>
-        <div class="loader-animation"></div>
+        <div className="loader-animation"></div>
       </div>
     </div>
   );
