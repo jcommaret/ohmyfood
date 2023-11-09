@@ -31,7 +31,7 @@
       {
         "name": "Magret de canard",
         "desc": "Et parmentier de pommes de terre",
-        "price": "35€"
+        "price": "35"
       },
       {
         "name": "Pigeonneau d’Ille-et-Vilaine",
@@ -48,12 +48,12 @@
       {
         "name": "Fondant au chocolat",
         "desc": "Revisité",
-        "price": "23€"
+        "price": "23"
       },
       {
         "name": "Millefeuille croustillant",
         "desc": "Myrtilles et pâte d’amande",
-        "price": "23€"
+        "price": "23"
       }
     ]
   },
