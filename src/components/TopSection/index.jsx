@@ -1,18 +1,20 @@
 function TopSection() {
   return (
-    <section class="top-section">
-      <div class="location">
-        <div class="here">
-          <i class="fa-solid fa-location-dot"></i>
+    <section className="top-section">
+      <div className="location">
+        <div className="here">
+          <i className="fa-solid fa-location-dot"></i>
           <span>Paris, Belleville</span>
         </div>
       </div>
-      <div class="description">
-        <h2 class="description__heading">Reservez le menu qui vous convient</h2>
-        <p class="description__text">
+      <div className="description">
+        <h2 className="description__heading">
+          Reservez le menu qui vous convient
+        </h2>
+        <p className="description__text">
           Découvrez des restaurants d'exception selectionnés par nos soins.
         </p>
-        <button class="button__gradient">Explorer nos restaurants</button>
+        <button className="button__gradient">Explorer nos restaurants</button>
       </div>
     </section>
   );
