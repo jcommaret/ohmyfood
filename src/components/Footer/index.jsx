@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer class="footer">
-      <h1 class="footer__logo">ohmyfood</h1>
-      <ul class="footer__menu">
+    <footer className="footer">
+      <h1 className="footer__logo">ohmyfood</h1>
+      <ul className="footer__menu">
         <li>
           <Link to="#">
             <span>
-              <i class="fa-solid fa-utensils"></i>
+              <i className="fa-solid fa-utensils"></i>
             </span>{" "}
             Proposez un restaurant
           </Link>
@@ -16,7 +16,7 @@ function Footer() {
         <li>
           <Link to="#">
             <span>
-              <i class="fa-solid fa-handshake-angle"></i>
+              <i className="fa-solid fa-handshake-angle"></i>
             </span>{" "}
             Devenir partenaire
           </Link>
