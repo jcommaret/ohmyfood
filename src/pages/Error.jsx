@@ -1,5 +1,5 @@
 import { useRouteError } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -10,9 +10,11 @@ export default function ErrorPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Erreur</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Erreur</title>
+        </Helmet>
+      </HelmetProvider>
       <Header isNotHomepage={true} />
       <div id="error-page">
         <h1>Oops!</h1>
