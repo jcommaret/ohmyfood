@@ -13,8 +13,8 @@ function Heart() {
           />
           <defs>
             <linearGradient id="FillGradient4" gradientTransform="rotate(90)">
-              <stop offset="2%" stop-color="#9356DC" />
-              <stop offset="98%" stop-color="#FF79DA" />
+              <stop offset="2%" stopColor="#9356DC" />
+              <stop offset="98%" stopColor="#FF79DA" />
             </linearGradient>
           </defs>
         </svg>
