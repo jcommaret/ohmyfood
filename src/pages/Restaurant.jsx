@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
-
-const image = "images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg";
-const ImgInFolderPath = image;
+import ImgInFolderPath from "./../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg";
+import Header from "../components/Header";
 
 function Restaurant() {
   return (
@@ -9,14 +8,8 @@ function Restaurant() {
       <Helmet>
         <title>Oh My Food - Restaurant : </title>
       </Helmet>
-      <header>
-        <a className="header__back" href="index.html">
-          <i className="fa-solid fa-arrow-left"></i>
-        </a>
-        <div className="header__logo">
-          <h1>ohmyfood</h1>
-        </div>
-      </header>
+      <Header isNotHomepage={true} />
+
       <main className="menu">
         <div className="cover">
           <img
