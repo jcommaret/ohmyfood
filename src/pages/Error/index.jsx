@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 
 export default function ErrorPage() {
   const error = useRouteError();
+  const message = "La page n'existe pas ou a été supprimée.";
 
   return (
     <>
@@ -21,7 +22,7 @@ export default function ErrorPage() {
           <h1 className="sweet-title">
             <span data-text={error.status}>{error.status}</span>
           </h1>
-          <span className="top-title">The page doesn't exist</span>
+          <span className="top-title">{message}</span>
         </div>
       </div>
 
