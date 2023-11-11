@@ -1,5 +1,6 @@
-@use "../utils/mixins" as m;
-@use "../utils/fonts" as f;
+@use "../../components/utils/mixins" as m;
+@use "../../components/utils/fonts" as f;
+@use "../../components/utils/colors" as c;
 
 .error-page {
   @include m.gradient;

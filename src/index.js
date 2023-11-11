@@ -4,15 +4,15 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from "./pages/Root";
-import Error from "./pages/Error";
 import Homepage from "./pages/Homepage";
 import Restaurant from "./pages/Restaurant";
+import ErrorPage from "./pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <Error />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
   {
     path: "/restaurant/:id",
     element: <Restaurant />,
-    errorElement: <Error />,
+    errorElement: <ErrorPage />,
   },
 ]);
 

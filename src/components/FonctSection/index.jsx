@@ -1,3 +1,5 @@
+import "./index.scss";
+
 function FonctSection() {
   return (
     <section className="function-section">

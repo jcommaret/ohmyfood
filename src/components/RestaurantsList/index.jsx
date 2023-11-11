@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 import Heart from "../Heart";
+import "./index.scss";
+
 import restaurants from "../../assets/data/restaurants.json";
 const ImagePath = process.env.PUBLIC_URL + "/images/restaurants/";
 

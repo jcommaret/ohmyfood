@@ -1,10 +1,12 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 
-import Header from "../components/Header";
-import Heart from "../components/Heart";
-import Button from "../components/Button";
-import restaurants from "../assets/data/restaurants";
+import Header from "../../components/Header";
+import Heart from "../../components/Heart";
+import Button from "../../components/Button";
+import restaurants from "../../assets/data/restaurants";
+
+import "./index.scss";
 
 const ImagePath = process.env.PUBLIC_URL + "/images/restaurants/";
 

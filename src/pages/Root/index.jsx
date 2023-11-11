@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import "./../styles/sass/main.scss";
+import "./index.scss";
 
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 function Root() {
   return (
     <>

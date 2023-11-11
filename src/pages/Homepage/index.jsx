@@ -1,10 +1,12 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import Loader from "../components/Loader";
-import Header from "../components/Header";
-import TopSection from "../components/TopSection";
-import FonctSection from "../components/FonctSection";
-import RestaurantsList from "../components/RestaurantsList";
+import Loader from "../../components/Loader";
+import Header from "../../components/Header";
+import TopSection from "../../components/TopSection";
+import FonctSection from "../../components/FonctSection";
+import RestaurantsList from "../../components/RestaurantsList";
+
+import "./index.scss";
 
 function Homepage() {
   return (

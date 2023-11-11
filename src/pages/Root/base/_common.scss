@@ -1,0 +1,15 @@
+@use "../../../components/utils/fonts" as f;
+@use "../../../components/utils/colors" as c;
+
+:root {
+  font-family: f.$roboto;
+}
+
+a {
+  text-decoration: none;
+  color: c.$black;
+}
+
+footer a {
+  color: c.$white;
+}

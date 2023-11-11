@@ -1,3 +1,5 @@
+import "./index.scss";
+
 function Heart() {
   return (
     <div className="heart">

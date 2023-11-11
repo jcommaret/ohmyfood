@@ -1,0 +1,124 @@
+@use "../../components/utils/colors" as c;
+@use "../../components/utils/mixins" as m;
+@use "../../components/utils/fonts" as f;
+
+.cover {
+  min-height: 350px;
+  img {
+    width: 100%;
+  }
+  .cover__img {
+    min-height: 400px;
+    max-height: 500px;
+  }
+}
+
+.carte {
+  @include m.top-rounded;
+  padding: 25px;
+  position: relative;
+  margin-top: -50px;
+  background-color: c.$grey-2;
+  &__heading {
+    font-family: f.$shrikhand;
+    font-weight: f.$bold;
+    font-size: f.$xlarge;
+    @include m.flex-row-sb;
+  }
+  .food {
+    &__heading {
+      margin-top: 45px;
+      text-transform: uppercase;
+    }
+    .line {
+      width: 40px;
+      height: 3px;
+      background-color: c.$light-green;
+    }
+    .separator {
+      @include m.flex-col;
+      gap: 10px;
+      min-width: calc(100% / 3 - 10px);
+    }
+
+    @include m.tablet {
+      @include m.flex-row-sb;
+      gap: 10px;
+      .separator {
+        @include m.flex-col;
+        max-width: calc(100% / 3 - 10px);
+      }
+    }
+  }
+  .plat {
+    @include m.fadeInAnimation;
+    @include m.shadow;
+    @include m.rounded;
+    @include m.flex-row-sb;
+    :first-child p:first-of-type {
+      font-weight: f.$bold;
+    }
+    &__eat {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      line-height: 22px;
+      p {
+        white-space: nowrap;
+        transition: width 0.4s;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &-informations {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &__price {
+        padding-top: 35px;
+        padding-right: 20px;
+      }
+
+      &__check {
+        @include m.right-rounded;
+        display: flex;
+        justify-content: center;
+        width: 0px;
+        line-height: 80px;
+        background-color: c.$light-green;
+        transition-property: width;
+        transition-duration: 400ms;
+        overflow: hidden;
+        i {
+          padding: 10px;
+          background-color: white;
+          color: c.$light-green;
+          transition: transform 400ms;
+          border-radius: 25px;
+          color: c.$light-green;
+        }
+      }
+    }
+
+    &:hover {
+      .plat-informations__check {
+        width: 70px;
+        i {
+          transform: rotate(360deg);
+        }
+      }
+      .plat__eat {
+        width: calc(100% - 135px);
+      }
+    }
+  }
+  .order {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+}

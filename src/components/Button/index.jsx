@@ -1,3 +1,5 @@
+import "./index.scss";
+
 function Button() {
   return (
     <section className="order">

@@ -1,6 +1,7 @@
 import { useRouteError } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
+import "./index.scss";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 

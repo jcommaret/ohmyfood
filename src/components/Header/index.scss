@@ -1,0 +1,32 @@
+@use "../utils/mixins" as m;
+@use "../utils/fonts" as f;
+@use "../utils/colors" as c;
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 62px;
+  position: relative;
+  &.home {
+    box-shadow: 0px 5px 5px #ddd;
+  }
+}
+
+.header {
+  &__back {
+    margin-left: 10px;
+    width: 10px;
+    line-height: 62px;
+    justify-content: flex-start;
+  }
+  &__logo {
+    font-family: f.$shrikhand;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    color: c.$black;
+    h1 {
+      padding-top: 24px;
+    }
+  }
+}

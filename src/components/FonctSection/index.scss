@@ -1,0 +1,22 @@
+@use "../utils/mixins" as m;
+@use "../utils/colors" as c;
+@use "../utils/fonts" as f;
+
+.function-section {
+  padding: 25px;
+  &__heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: f.$xlarge;
+    font-weight: f.$semi-bold;
+  }
+  .function-steps {
+    gap: 25px;
+    @include m.flex-col;
+    @include m.rounded;
+    @include m.tablet {
+      @include m.flex-row;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@use "../utils/mixins" as m;
+@use "../utils/fonts" as f;
+@use "../utils/colors" as c;
+
+.button {
+  &__gradient {
+    @include m.gradient;
+    @include m.rounded;
+    @include m.shadow;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: 50px;
+    width: 220px;
+    color: c.$white;
+    border: none;
+  }
+
+  &__function {
+    @include m.flex-row;
+    @include m.rounded;
+    @include m.shadow;
+    background-color: c.$grey-2;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    i {
+      color: c.$grey-dark;
+      margin-top: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    &:hover {
+      background-color: c.$bg-steps-hover;
+      i {
+        color: c.$purple;
+      }
+    }
+    &__number {
+      @include m.rounded(12px);
+      color: c.$white;
+      background-color: c.$purple;
+      height: 20px;
+      width: 20px;
+      margin-top: 25px;
+      margin-left: -10px;
+      span {
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 6px;
+        font-size: f.$small-font;
+      }
+    }
+  }
+}
+
+.button__function {
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+.button__gradient {
+  transition-property: background-image;
+  transition-duration: 300ms;
+}
