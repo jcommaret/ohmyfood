@@ -1,4 +1,4 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 import Loader from "../../components/Loader";
 import Header from "../../components/Header";
@@ -13,11 +13,9 @@ function Homepage() {
     <>
       <Loader />
 
-      <HelmetProvider>
-        <Helmet>
-          <title>Oh My Food !</title>
-        </Helmet>
-      </HelmetProvider>
+      <Helmet>
+        <title>Oh My Food !</title>
+      </Helmet>
 
       <Header isNotHomepage={false} />
 

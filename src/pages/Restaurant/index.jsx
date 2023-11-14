@@ -1,10 +1,11 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 
 import Header from "../../components/Header";
 import Heart from "../../components/Heart";
 import Button from "../../components/Button";
-import restaurants from "../../assets/data/restaurants";
+
+import restaurants from "../../assets/data/restaurants.json";
 
 import "./index.scss";
 
@@ -84,12 +85,9 @@ function Restaurant() {
 
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Oh My Food - Restaurant : {name} </title>
-        </Helmet>
-      </HelmetProvider>
-
+      <Helmet>
+        <title>Oh My Food - Restaurant : {name} </title>
+      </Helmet>
       <Header isNotHomepage={true} />
 
       <main className="menu">
