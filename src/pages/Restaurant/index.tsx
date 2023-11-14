@@ -9,8 +9,6 @@ import restaurants from "../../assets/data/restaurants.json";
 
 import "./index.scss";
 
-const ImagePath = process.env.PUBLIC_URL + "/images/restaurants/";
-
 function Restaurant() {
   const id = useParams().id;
   const restaurant = restaurants.find((restaurant) => restaurant.id === id);
@@ -92,7 +90,7 @@ function Restaurant() {
 
       <main className="menu">
         <div className="cover">
-          <img className="cover__img" alt={name} src={`${ImagePath + cover}`} />
+          <img className="cover__img" alt={name} src={`${cover}`} />
         </div>
 
         <section className="carte">

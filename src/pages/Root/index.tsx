@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import "./index.scss";
 
 import Footer from "../../components/Footer";
+
 function Root() {
   return (
     <>

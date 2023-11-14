@@ -4,7 +4,6 @@ import Heart from "../Heart";
 import "./index.scss";
 
 import restaurants from "../../assets/data/restaurants.json";
-const ImagePath = process.env.PUBLIC_URL + "/images/restaurants/";
 
 function restaurantsList() {
   return (
@@ -20,7 +19,7 @@ function restaurantsList() {
             >
               <img
                 className="place__img"
-                src={`${ImagePath + restaurant.cover}`}
+                src={`${restaurant.cover}`}
                 alt={restaurant.name}
               />
               {restaurant.isNew && <span className="place_new">Nouveau</span>}

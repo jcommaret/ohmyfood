@@ -2,8 +2,8 @@ import { useRouteError } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 import "./index.scss";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../../components/Header/index.tsx";
+import Footer from "../../components/Footer/index.tsx";
 
 export default function ErrorPage() {
   const error = useRouteError();
