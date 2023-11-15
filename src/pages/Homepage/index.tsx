@@ -8,7 +8,7 @@ import RestaurantsList from "../../components/RestaurantsList";
 
 import "./index.scss";
 
-function Homepage() {
+export function Homepage() {
   return (
     <>
       <Loader />

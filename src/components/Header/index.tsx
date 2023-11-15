@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./index.scss";
 
-function Header({ isNotHomepage }) {
+export function Header({ isNotHomepage }) {
   return (
     <header className="home">
       {isNotHomepage && (

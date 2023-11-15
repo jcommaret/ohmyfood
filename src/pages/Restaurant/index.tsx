@@ -9,7 +9,7 @@ import restaurants from "../../assets/data/restaurants.json";
 
 import "./index.scss";
 
-function Restaurant() {
+export function Restaurant() {
   const id = useParams().id;
   const restaurant = restaurants.find((restaurant) => restaurant.id === id);
   const name = restaurant.title;

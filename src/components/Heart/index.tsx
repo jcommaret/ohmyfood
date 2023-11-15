@@ -1,6 +1,6 @@
 import "./index.scss";
 
-function Heart() {
+export function Heart() {
   return (
     <div className="heart">
       <div className="icon">

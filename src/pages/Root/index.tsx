@@ -5,7 +5,7 @@ import "./index.scss";
 
 import Footer from "../../components/Footer";
 
-function Root() {
+export function Root() {
   return (
     <>
       <Helmet>

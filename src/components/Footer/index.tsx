@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./index.scss";
 
-function Footer() {
+export function Footer() {
   return (
     <footer className="footer">
       <h1 className="footer__logo">ohmyfood</h1>

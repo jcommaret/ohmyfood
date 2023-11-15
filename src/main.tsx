@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
-import Root from "./pages/Root/index.tsx";
-import Homepage from "./pages/Homepage/index.tsx";
-import Restaurant from "./pages/Restaurant/index.tsx";
-import ErrorPage from "./pages/Error/index.tsx";
+import Root from "./pages/Root";
+import Homepage from "./pages/Homepage";
+import Restaurant from "./pages/Restaurant";
+import ErrorPage from "./pages/Error";
 
 const router = createBrowserRouter([
   {

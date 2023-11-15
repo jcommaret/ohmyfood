@@ -1,6 +1,6 @@
 import "./index.scss";
 
-function Loader() {
+export function Loader() {
   return (
     <div className="loader">
       <div className="load">

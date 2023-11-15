@@ -1,4 +1,4 @@
-function TopSection() {
+export function TopSection() {
   return (
     <section className="top-section">
       <div className="location">

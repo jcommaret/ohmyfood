@@ -2,10 +2,10 @@ import { useRouteError } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 import "./index.scss";
-import Header from "../../components/Header/index.tsx";
-import Footer from "../../components/Footer/index.tsx";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
-export default function ErrorPage() {
+export function ErrorPage() {
   const error = useRouteError();
   const message = "La page n'existe pas ou a été supprimée.";
 
@@ -29,3 +29,5 @@ export default function ErrorPage() {
     </>
   );
 }
+
+export default ErrorPage;

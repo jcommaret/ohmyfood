@@ -1,6 +1,6 @@
 import "./index.scss";
 
-function FonctSection() {
+export function FonctSection() {
   return (
     <section className="function-section">
       <h2 className="function-section__heading">Fonctionnement</h2>

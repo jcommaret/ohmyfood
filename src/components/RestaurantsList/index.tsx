@@ -5,7 +5,7 @@ import "./index.scss";
 
 import restaurants from "../../assets/data/restaurants.json";
 
-function restaurantsList() {
+export function restaurantsList() {
   return (
     <section className="restaurant-section">
       <h2 className="restaurant-section__heading">Restaurants</h2>
