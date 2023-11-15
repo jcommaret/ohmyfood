@@ -20,7 +20,7 @@ export function restaurantsList() {
               <img
                 className="place__img"
                 src={`${restaurant.cover}`}
-                alt={restaurant.name}
+                alt={restaurant.title}
               />
               {restaurant.isNew && <span className="place_new">Nouveau</span>}
               <div className="place__description">
