@@ -2,6 +2,13 @@
 @use "../utils/fonts" as f;
 @use "../utils/colors" as c;
 
+.carte {
+  .order {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+}
 .button {
   &__gradient {
     @include m.gradient;
