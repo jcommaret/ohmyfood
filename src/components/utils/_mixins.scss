@@ -1,89 +1,88 @@
 @use "colors" as c;
 @use "breakpoints" as b;
 
-@mixin shadow (
-    $shadow : 0px 0px 20px -5px c.$grey-dark){
-    box-shadow: $shadow;
-    &:hover{
-        box-shadow: 0px 0px 20px -5px #000 ;
-        cursor: pointer;
-    }
-
+@mixin shadow($shadow: 0px 0px 20px -5px c.$grey-dark) {
+  box-shadow: $shadow;
+  &:hover {
+    box-shadow: 0px 0px 20px -5px #000;
+    cursor: pointer;
+  }
 }
 
-@mixin gradient (
-    $gradient : linear-gradient(c.$pink, c.$purple), 
-    $gradient-l : linear-gradient(lighten(c.$pink, 10), lighten(c.$purple, 10))
-)
-{  
-    background-image: $gradient;
-    &:hover{
-        background-image: $gradient-l ;
-        cursor: pointer;
-    }
+@mixin gradient(
+  $gradient: linear-gradient(c.$pink, c.$purple),
+  $gradient-l: linear-gradient(lighten(c.$pink, 10), lighten(c.$purple, 10))
+) {
+  background-image: $gradient;
 }
 
-@mixin rounded($radius:25px) {
-    border-radius: $radius;
+@mixin rounded($radius: 25px) {
+  border-radius: $radius;
 }
 
-@mixin top-rounded($radius:25px) {
-    border-top-right-radius: $radius;
-    border-top-left-radius: $radius;
+@mixin top-rounded($radius: 25px) {
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
 }
 
-@mixin right-rounded($radius:25px) {
-    border-top-right-radius: $radius;
-    border-bottom-right-radius: $radius;
+@mixin right-rounded($radius: 25px) {
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
 }
 
-@mixin flex{
-    display: flex;
+@mixin flex {
+  display: flex;
 }
 
-@mixin flex-col{
-    @include flex();
-    flex-direction: column;
+@mixin flex-col {
+  @include flex();
+  flex-direction: column;
 }
 
 @mixin flex-row {
-    @include flex();
-    flex-direction: row;
+  @include flex();
+  flex-direction: row;
 }
 
 @mixin flex-row-center {
-    @include flex-row();
-    justify-content: center;
+  @include flex-row();
+  justify-content: center;
 }
 
 @mixin flex-row-sb {
-    @include flex-row();
-    justify-content: space-between;
+  @include flex-row();
+  justify-content: space-between;
 }
 
 @mixin margin-auto {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@mixin fadeInAnimation{
-    animation:fadeIn 3s linear;
-    animation-fill-mode: forwards;
+@mixin fadeInAnimation {
+  animation: fadeIn 3s linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; margin-top :10px;}
-      to { opacity: 1; margin-top :0px; }
+  from {
+    opacity: 0;
+    margin-top: 10px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }
 
 @mixin tablet {
-    @media screen and (min-width: map-get(b.$breakpoints, tablet)){
-        @content;
-    }
+  @media screen and (min-width: map-get(b.$breakpoints, tablet)) {
+    @content;
+  }
 }
 
-@mixin desktop{
-    @media screen and (min-width: map-get(b.$breakpoints, desktop)){
-        @content;
-    }
+@mixin desktop {
+  @media screen and (min-width: map-get(b.$breakpoints, desktop)) {
+    @content;
+  }
 }
