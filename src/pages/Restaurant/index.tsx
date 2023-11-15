@@ -18,9 +18,9 @@ export function Restaurant() {
   const plats = restaurant.plats;
   const desserts = restaurant.desserts;
 
-  const entreesList = entrees.map((entree) => {
+  const entreesList = entrees.map((entree, id) => {
     return (
-      <section className="plat">
+      <section className="plat" key={id}>
         <div className="plat__eat">
           <p>{entree.name}</p>
           <p>{entree.desc}</p>
@@ -39,9 +39,9 @@ export function Restaurant() {
     );
   });
 
-  const platsList = plats.map((plat) => {
+  const platsList = plats.map((plat, id) => {
     return (
-      <section className="plat">
+      <section className="plat" key={plat + id}>
         <div className="plat__eat">
           <p>{plat.name}</p>
           <p>{plat.desc}</p>
@@ -60,9 +60,9 @@ export function Restaurant() {
     );
   });
 
-  const dessertsList = desserts.map((dessert) => {
+  const dessertsList = desserts.map((dessert, id) => {
     return (
-      <section className="plat">
+      <section className="plat" key={id}>
         <div className="plat__eat">
           <p>{dessert.name}</p>
           <p>{dessert.desc}</p>
