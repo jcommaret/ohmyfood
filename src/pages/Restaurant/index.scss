@@ -52,7 +52,6 @@
     }
   }
   .plat {
-    @include m.fadeInAnimation;
     @include m.shadow;
     @include m.rounded;
     @include m.flex-row-sb;
