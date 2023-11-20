@@ -6,8 +6,8 @@
   @include m.flex-col;
   @include m.gradient;
   position: fixed;
+  top: 0;
   z-index: 1000;
-  overflow: hidden;
   height: 100%;
   width: 100%;
   .load {
@@ -40,7 +40,7 @@
 }
 
 .loader {
-  animation: hideAnimation 0s ease-in 3s;
+  //animation: hideAnimation 0s ease-in 0.5s;
   animation-fill-mode: forwards;
   .loader-animation {
     animation: spin 2s linear infinite;

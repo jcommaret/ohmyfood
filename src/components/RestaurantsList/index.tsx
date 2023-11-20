@@ -5,6 +5,17 @@ import "./index.scss";
 
 import restaurants from "../../assets/data/restaurants.json";
 
+type restaurants = {
+  id: number;
+  title: string;
+  place: string;
+  cover: string;
+  isNew: boolean;
+  entrees: string[];
+  plats: string[];
+  desserts: string[];
+};
+
 export function restaurantsList() {
   return (
     <section className="restaurant-section">

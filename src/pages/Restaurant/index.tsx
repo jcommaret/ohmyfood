@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Header from "../../components/Header";
 import Heart from "../../components/Heart";
 import Button from "../../components/Button";
-
+import Footer from "../../components/Footer";
 import restaurants from "../../assets/data/restaurants.json";
 
 import "./index.scss";
@@ -87,7 +87,6 @@ export function Restaurant() {
         <title>Oh My Food - Restaurant : {name} </title>
       </Helmet>
       <Header isNotHomepage={true} />
-
       <main className="menu">
         <div className="cover">
           <img className="cover__img" alt={name} src={`${cover}`} />
@@ -121,6 +120,8 @@ export function Restaurant() {
           <Button></Button>
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }
