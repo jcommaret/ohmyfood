@@ -88,7 +88,9 @@ export function Restaurant() {
       <Helmet>
         <title>Oh My Food - Restaurant : {name} </title>
       </Helmet>
+
       <Header isNotHomepage={true} />
+
       <main className="menu">
         <div className="cover">
           <img className="cover__img" alt={name} src={`${cover}`} />

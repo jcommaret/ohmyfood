@@ -21,7 +21,6 @@
     color: c.$white;
     border: none;
   }
-
   &__function {
     @include m.flex-row;
     @include m.rounded;

@@ -1,11 +1,10 @@
 import { Helmet } from "react-helmet-async";
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 
 import Loader from "../../components/Loader";
-
-const TopSection = lazy(() => import("../../components/TopSection"));
-const FonctSection = lazy(() => import("../../components/FonctSection"));
-const RestaurantsList = lazy(() => import("../../components/RestaurantsList"));
+import TopSection from "../../components/TopSection";
+import FonctSection from "../../components/FonctSection";
+import RestaurantsList from "../../components/RestaurantsList";
 
 import "./index.scss";
 
