@@ -1,11 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
-import { lazy } from "react";
 
-const Header = lazy(() => import("../../components/Header"));
-const Heart = lazy(() => import("../../components/Heart"));
-const Button = lazy(() => import("../../components/Button"));
-const Footer = lazy(() => import("../../components/Footer"));
+import Header from "../../components/Header";
+import Heart from "../../components/Heart";
+import Button from "../../components/Button";
+import Footer from "../../components/Footer";
 
 import restaurants from "../../assets/data/restaurants.json";
 
