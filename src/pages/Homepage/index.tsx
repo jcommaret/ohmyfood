@@ -13,6 +13,11 @@ export function Homepage() {
     <>
       <Helmet>
         <title>Oh My Food !</title>
+        <meta
+          name="description"
+          content="Welcome to oh My food, restaurant takeway plateform"
+        ></meta>
+        <meta name="theme-color" content="#FF00FF" />
       </Helmet>
 
       <Suspense fallback={<Loader />}>

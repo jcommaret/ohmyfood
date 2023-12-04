@@ -18,7 +18,7 @@ export function Restaurant() {
   const entrees = restaurant.entrees;
   const plats = restaurant.plats;
   const desserts = restaurant.desserts;
-
+  const restaurantWithName = "Restaurant : " + name + "";
   const entreesList = entrees.map((entree, id) => {
     return (
       <section className="plat" key={id}>
@@ -85,7 +85,9 @@ export function Restaurant() {
   return (
     <>
       <Helmet>
-        <title>Oh My Food - Restaurant : {name} </title>
+        <title>Oh My Food - {restaurantWithName} </title>
+        <meta name="description" content={restaurantWithName}></meta>
+        <meta name="theme-color" content="#FF00FF" />
       </Helmet>
 
       <Header isNotHomepage={true} />

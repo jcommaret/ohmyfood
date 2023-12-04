@@ -12,6 +12,7 @@ export function Root() {
     <>
       <Helmet>
         <title>Oh My Food !</title>
+        <meta name="theme-color" content="#FF00FF" />
       </Helmet>
       <Header isNotHomepage={false} />
       <Suspense fallback={<Loader />}>

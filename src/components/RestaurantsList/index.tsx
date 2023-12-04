@@ -36,7 +36,7 @@ export function restaurantsList() {
               {restaurant.isNew && <span className="place_new">Nouveau</span>}
               <div className="place__description">
                 <div className="place__information">
-                  <h4 className="place__heading">{restaurant.title}</h4>
+                  <h3 className="place__heading">{restaurant.title}</h3>
                   <p className="place__text">{restaurant.place}</p>
                 </div>
                 <div className="place__favorites">
