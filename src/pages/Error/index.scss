@@ -5,6 +5,7 @@
 .error-page {
   @include m.gradient;
   font-family: f.$shrikhand;
+  font-display: swap;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

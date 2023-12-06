@@ -22,6 +22,7 @@
   background-color: c.$grey-2;
   &__heading {
     font-family: f.$shrikhand;
+    font-display: swap;
     font-weight: f.$bold;
     font-size: f.$xlarge;
     @include m.flex-row-sb;

@@ -7,7 +7,31 @@ import restaurants from "src/assets/data/restaurants.json";
 
 import "./index.scss";
 
-export function Restaurant() {
+type RestaurantProps = {
+  restaurant: Array<{
+    id: string;
+    name: string;
+    place: string;
+    title: string;
+    entrees: Array<{
+      name: string;
+      desc: string;
+      price: number;
+    }>;
+    plats: Array<{
+      name: string;
+      desc: string;
+      price: number;
+    }>;
+    desserts: Array<{
+      name: string;
+      desc: string;
+      price: number;
+    }>;
+  }>;
+};
+
+export function Restaurant(): RestaurantProps[Array<string>] {
   const id = useParams().id;
   const restaurant = restaurants.find((restaurant) => restaurant.id === id);
   const name = restaurant.title;
@@ -39,7 +63,7 @@ export function Restaurant() {
 
   const platsList = plats.map((plat, id) => {
     return (
-      <section className="plat" key={plat + id}>
+      <section className="plat" key={id}>
         <div className="plat__eat">
           <p>{plat.name}</p>
           <p>{plat.desc}</p>

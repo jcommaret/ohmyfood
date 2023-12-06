@@ -4,6 +4,7 @@
 
 footer {
   font-family: f.$roboto;
+  font-display: swap;
   font-weight: f.$normal;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -17,6 +18,7 @@ footer {
       margin-bottom: 25px;
       color: c.$white;
       font-family: f.$shrikhand;
+      font-display: swap;
     }
     &__menu {
       padding: 20px;
