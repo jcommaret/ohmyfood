@@ -33,3 +33,4 @@ export function FonctSection() {
     </section>
   );
 }
+export default FonctSection;

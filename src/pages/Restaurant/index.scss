@@ -1,6 +1,6 @@
-@use "../../components/utils/colors" as c;
-@use "../../components/utils/mixins" as m;
-@use "../../components/utils/fonts" as f;
+@use "src/components/utils/colors" as c;
+@use "src/components/utils/mixins" as m;
+@use "src/components/utils/fonts" as f;
 
 .cover {
   min-height: 350px;

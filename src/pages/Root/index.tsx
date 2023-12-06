@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Suspense } from "react";
 
-import { Loader, Header, Footer } from "../../components/index.ts";
+import { Loader, Header, Footer } from "src/components";
 
 import "./index.scss";
 

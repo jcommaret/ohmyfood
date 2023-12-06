@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 import "./index.scss";
 
-import { Header, Footer } from "@/components";
+import { Header, Footer } from "src/components";
 
 export function ErrorPage() {
   const error = useRouteError();

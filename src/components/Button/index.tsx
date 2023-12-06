@@ -7,3 +7,5 @@ export function Button() {
     </section>
   );
 }
+
+export default Button;

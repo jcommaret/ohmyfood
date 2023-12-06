@@ -6,7 +6,7 @@ import {
   TopSection,
   FonctSection,
   RestaurantsList,
-} from "../../components/index.ts";
+} from "src/components";
 
 import "./index.scss";
 
@@ -32,3 +32,5 @@ export function Homepage() {
     </>
   );
 }
+
+export default Homepage;

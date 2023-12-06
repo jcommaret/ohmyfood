@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-import { Heart } from "../../components/index.ts";
+import { Heart } from "src/components/index.ts";
 
 import "./index.scss";
 
-import restaurants from "../../assets/data/restaurants.json";
+import restaurants from "src/assets/data/restaurants.json";
 
 type restaurants = {
   id: number;
@@ -51,3 +51,5 @@ export function RestaurantsList() {
     </section>
   );
 }
+
+export default RestaurantsList;

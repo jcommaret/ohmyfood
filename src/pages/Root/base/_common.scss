@@ -1,5 +1,5 @@
-@use "../../../components/utils/fonts" as f;
-@use "../../../components/utils/colors" as c;
+@use "src/components/utils/fonts" as f;
+@use "src/components/utils/colors" as c;
 
 :root {
   font-family: f.$roboto;
