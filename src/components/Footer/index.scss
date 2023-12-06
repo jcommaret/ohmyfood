@@ -13,11 +13,13 @@ footer {
   color: c.$white;
   .footer {
     &__logo {
+      padding: 20px;
       margin-bottom: 25px;
       color: c.$white;
       font-family: f.$shrikhand;
     }
     &__menu {
+      padding: 20px;
       @include m.tablet {
         display: flex;
         flex-direction: row;
