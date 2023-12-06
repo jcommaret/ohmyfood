@@ -11,4 +11,3 @@ export function Loader() {
     </div>
   );
 }
-export default Loader;

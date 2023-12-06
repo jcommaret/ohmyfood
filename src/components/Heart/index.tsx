@@ -24,5 +24,3 @@ export function Heart() {
     </div>
   );
 }
-
-export default Heart;

@@ -1,10 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 
-import Header from "../../components/Header";
-import Heart from "../../components/Heart";
-import Button from "../../components/Button";
-import Footer from "../../components/Footer";
+import { Header, Heart, Button, Footer } from "@/components";
 
 import restaurants from "../../assets/data/restaurants.json";
 
@@ -130,5 +127,3 @@ export function Restaurant() {
     </>
   );
 }
-
-export default Restaurant;

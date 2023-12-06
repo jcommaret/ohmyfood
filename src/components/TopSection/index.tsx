@@ -19,4 +19,3 @@ export function TopSection() {
     </section>
   );
 }
-export default TopSection;

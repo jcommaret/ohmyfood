@@ -15,4 +15,3 @@ export function Header({ isNotHomepage }) {
     </header>
   );
 }
-export default Header;

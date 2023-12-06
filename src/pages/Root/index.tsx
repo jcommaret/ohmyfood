@@ -1,11 +1,10 @@
 import { Outlet } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Suspense } from "react";
-import "./index.scss";
 
-import Loader from "../../components/Loader";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import { Loader, Header, Footer } from "../../components/index.ts";
+
+import "./index.scss";
 
 export function Root() {
   return (

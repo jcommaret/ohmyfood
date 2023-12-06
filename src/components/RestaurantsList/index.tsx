@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-import Heart from "../Heart";
+import { Heart } from "../../components/index.ts";
+
 import "./index.scss";
 
 import restaurants from "../../assets/data/restaurants.json";
@@ -16,7 +17,7 @@ type restaurants = {
   desserts: string[];
 };
 
-export function restaurantsList() {
+export function RestaurantsList() {
   return (
     <section className="restaurant-section">
       <h2 className="restaurant-section__heading">Restaurants</h2>
@@ -50,5 +51,3 @@ export function restaurantsList() {
     </section>
   );
 }
-
-export default restaurantsList;

@@ -1,10 +1,12 @@
 import { Helmet } from "react-helmet-async";
 import { Suspense } from "react";
 
-import Loader from "../../components/Loader";
-import TopSection from "../../components/TopSection";
-import FonctSection from "../../components/FonctSection";
-import RestaurantsList from "../../components/RestaurantsList";
+import {
+  Loader,
+  TopSection,
+  FonctSection,
+  RestaurantsList,
+} from "../../components/index.ts";
 
 import "./index.scss";
 
@@ -30,5 +32,3 @@ export function Homepage() {
     </>
   );
 }
-
-export default Homepage;
