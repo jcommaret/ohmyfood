@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://jcommaret.github.io/ohmyfood",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -24,9 +25,11 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.1.0",
     "sass": "^1.69.5",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
-    "vite-plugin-compression": "^0.5.1"
+    "vite-plugin-compression": "^0.5.1",
+    "vite-tsconfig-paths": "^4.2.1"
   }
 }
