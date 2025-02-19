@@ -1,8 +1,12 @@
 @use "colors" as c;
 @use "breakpoints" as b;
+@use "sass:map";
+@use "sass:color";
 
 @mixin shadow($shadow: 0px 0px 20px -5px c.$grey-dark) {
-  box-shadow: $shadow;
+  & {
+    box-shadow: $shadow;
+  }
   &:hover {
     box-shadow: 0px 0px 20px -5px #000;
     cursor: pointer;
@@ -11,13 +15,19 @@
 
 @mixin gradient(
   $gradient: linear-gradient(c.$pink, c.$purple),
-  $gradient-l: linear-gradient(lighten(c.$pink, 10), lighten(c.$purple, 10))
+  $gradient-l:
+    linear-gradient(
+      color.adjust(c.$pink, $lightness: 10%),
+      color.adjust(c.$purple, $lightness: 10%)
+    )
 ) {
   background-image: $gradient;
 }
 
 @mixin rounded($radius: 25px) {
-  border-radius: $radius;
+  & {
+    border-radius: $radius;
+  }
 }
 
 @mixin top-rounded($radius: 25px) {
@@ -76,13 +86,13 @@
 }
 
 @mixin tablet {
-  @media screen and (min-width: map-get(b.$breakpoints, tablet)) {
+  @media screen and (min-width: map.get(b.$breakpoints, tablet)) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: map-get(b.$breakpoints, desktop)) {
+  @media screen and (min-width: map.get(b.$breakpoints, desktop)) {
     @content;
   }
 }

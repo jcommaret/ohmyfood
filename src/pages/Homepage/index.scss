@@ -81,14 +81,13 @@
     }
 
     &__img {
-      max-width: 100%;
-      background-size: cover;
-      background-position: center center;
+      & {
+        height: 174px;
+        object-fit: cover;
+      }
       @include m.desktop {
         min-height: 220px;
       }
-      height: 174px;
-      object-fit: cover;
     }
     &__description {
       margin-top: 15px;
