@@ -2,6 +2,20 @@
 @use "src/components/utils/mixins" as m;
 @use "src/components/utils/fonts" as f;
 
+.homepage {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    background-color: c.$grey-1;
+  }
+}
+
 .top-section {
   @include m.flex-col;
   padding: 0px;
@@ -44,11 +58,13 @@
   margin-top: 50px;
   gap: 20px;
   padding: 25px;
+
   &__heading {
     margin-top: 30px;
     font-size: f.$xlarge;
     font-weight: f.$semi-bold;
   }
+
   .all-places {
     margin-top: -20px;
     gap: 20px;
@@ -56,6 +72,7 @@
       @include m.flex-row;
     }
   }
+
   .places {
     z-index: 0;
     @include m.tablet {
@@ -64,31 +81,36 @@
       @include m.flex-row;
     }
   }
+
   .place {
     margin-top: 20px;
     flex: 1;
     display: block;
     height: 250px;
+    background-color: white;
+    position: relative;
+
+    @include m.shadow;
+    @include m.rounded;
+
     @include m.desktop {
       height: 300px;
     }
-    @include m.shadow;
-    @include m.rounded;
+
+    &__img {
+      height: 174px;
+      object-fit: cover;
+
+      @include m.desktop {
+        min-height: 220px;
+      }
+    }
 
     img {
       width: 100%;
       @include m.top-rounded;
     }
 
-    &__img {
-      & {
-        height: 174px;
-        object-fit: cover;
-      }
-      @include m.desktop {
-        min-height: 220px;
-      }
-    }
     &__description {
       margin-top: 15px;
       margin-left: 15px;

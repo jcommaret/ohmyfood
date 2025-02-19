@@ -118,3 +118,23 @@
     }
   }
 }
+
+.menu {
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: calc(100% / 3 - 10px);
+
+    @include m.tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
