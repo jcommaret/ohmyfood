@@ -14,9 +14,11 @@
     @include m.gradient;
     @include m.rounded;
     @include m.shadow;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    height: 50px;
+    & {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      height: 50px;
+    }
     width: 220px;
     color: c.$white;
     border: none;

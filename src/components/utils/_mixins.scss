@@ -41,7 +41,9 @@
 }
 
 @mixin flex {
-  display: flex;
+  & {
+    display: flex;
+  }
 }
 
 @mixin flex-col {
@@ -50,8 +52,10 @@
 }
 
 @mixin flex-row {
-  @include flex();
-  flex-direction: row;
+  & {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @mixin flex-row-center {
@@ -60,8 +64,11 @@
 }
 
 @mixin flex-row-sb {
-  @include flex-row();
-  justify-content: space-between;
+  & {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @mixin margin-auto {
