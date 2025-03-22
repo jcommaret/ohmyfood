@@ -6,15 +6,8 @@ import "./index.scss";
 
 import restaurants from "src/assets/data/restaurants.json";
 
-type RestaurantProps = {
-  id: number;
-  title: string;
-  place: string;
-  cover: string;
-  isNew: boolean;
-};
 
-export function RestaurantsList(): RestaurantProps[Array<T>] {
+export function RestaurantsList() {
   return (
     <section className="restaurant-section">
       <h2 className="restaurant-section__heading">Restaurants</h2>

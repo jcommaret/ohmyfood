@@ -5,8 +5,14 @@ import "./index.scss";
 
 import { Header, Footer } from "src/components";
 
+interface RouterError {
+  status: number;
+  statusText: string;
+  message?: string;
+}
+
 export function ErrorPage() {
-  const error = useRouteError();
+  const error = useRouteError() as RouterError;
   const message = "La page n'existe pas ou a été supprimée.";
 
   return (

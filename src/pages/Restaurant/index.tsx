@@ -1,48 +1,41 @@
 import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
+import restaurants from "src/assets/data/restaurants.json";
 
 import { Header, Heart, Button, Footer } from "src/components";
 
-import restaurants from "src/assets/data/restaurants.json";
-
 import "./index.scss";
 
-type RestaurantProps = {
-  restaurant: Array<{
-    id: string;
-    name: string;
-    place: string;
-    title: string;
-    entrees: Array<{
-      name: string;
-      desc: string;
-      price: number;
-    }>;
-    plats: Array<{
-      name: string;
-      desc: string;
-      price: number;
-    }>;
-    desserts: Array<{
-      name: string;
-      desc: string;
-      price: number;
-    }>;
-  }>;
-};
+interface MenuItem {
+  name: string;
+  desc: string;
+  price: string;
+}
 
-export function Restaurant(): RestaurantProps[Array<string>] {
-  const id = useParams().id;
-  const restaurant = restaurants.find((restaurant) => restaurant.id === id);
-  const name = restaurant.title;
-  const cover = restaurant.cover;
-  const entrees = restaurant.entrees;
-  const plats = restaurant.plats;
-  const desserts = restaurant.desserts;
-  const restaurantWithName = "Restaurant : " + name + "";
-  const entreesList = entrees.map((entree, id) => {
+interface Restaurant {
+  id: string;
+  isNew: boolean;
+  title: string;
+  place: string;
+  cover: string;
+  entrees: MenuItem[];
+  plats: MenuItem[];
+  desserts: MenuItem[];
+}
+
+export function Restaurant() {
+  const { id } = useParams();
+  const restaurant = restaurants.find((r: Restaurant) => r.id === id);
+
+  if (!restaurant) {
+    return <div>Restaurant non trouvé</div>;
+  }
+
+  const { title: name, cover, entrees, plats, desserts } = restaurant;
+
+  const entreesList = entrees.map((entree: MenuItem, index: number) => {
     return (
-      <section className="plat" key={id}>
+      <section className="plat" key={index}>
         <div className="plat__eat">
           <p>{entree.name}</p>
           <p>{entree.desc}</p>
@@ -61,9 +54,9 @@ export function Restaurant(): RestaurantProps[Array<string>] {
     );
   });
 
-  const platsList = plats.map((plat, id) => {
+  const platsList = plats.map((plat: MenuItem, index: number) => {
     return (
-      <section className="plat" key={id}>
+      <section className="plat" key={index}>
         <div className="plat__eat">
           <p>{plat.name}</p>
           <p>{plat.desc}</p>
@@ -82,9 +75,9 @@ export function Restaurant(): RestaurantProps[Array<string>] {
     );
   });
 
-  const dessertsList = desserts.map((dessert, id) => {
+  const dessertsList = desserts.map((dessert: MenuItem, index: number) => {
     return (
-      <section className="plat" key={id}>
+      <section className="plat" key={index}>
         <div className="plat__eat">
           <p>{dessert.name}</p>
           <p>{dessert.desc}</p>
@@ -102,6 +95,8 @@ export function Restaurant(): RestaurantProps[Array<string>] {
       </section>
     );
   });
+
+  const restaurantWithName = "Restaurant : " + name;
 
   return (
     <>
