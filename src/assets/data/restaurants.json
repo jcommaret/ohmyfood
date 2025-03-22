@@ -2,9 +2,9 @@
   {
     "id": "1",
     "isNew": true,
-    "title": "A la française",
+    "title": "La palette du goût",
     "place": "Ménilmontant",
-    "cover": "/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg?raw=true",
+    "cover": "/ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg",
     "entrees": [
       {
         "name": "Tartare de poulpe acidulé",
@@ -34,7 +34,7 @@
         "price": "35"
       },
       {
-        "name": "Pigeonneau d’Ille-et-Vilaine",
+        "name": "Pigeonneau d'Ille-et-Vilaine",
         "desc": "Sur son lit de gnocchis aux légumes",
         "price": "44"
       }
@@ -52,7 +52,7 @@
       },
       {
         "name": "Millefeuille croustillant",
-        "desc": "Myrtilles et pâte d’amande",
+        "desc": "Myrtilles et pâte d'amande",
         "price": "23"
       }
     ]
@@ -62,7 +62,7 @@
     "isNew": true,
     "title": "La note enchantée",
     "place": "Charonne",
-    "cover": "/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg?raw=true",
+    "cover": "/ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg",
     "entrees": [
       {
         "name": "Ravioles de foie gras",
@@ -123,9 +123,9 @@
   {
     "id": "3",
     "isNew": false,
-    "title": "La palette du gout",
-    "place": "Bastille",
-    "cover": "/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg?raw=true",
+    "title": "À la française",
+    "place": "Cité Rouge",
+    "cover": "/ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg",
     "entrees": [
       {
         "name": "Fricassée d'escargot",
@@ -182,8 +182,8 @@
     "id": "4",
     "isNew": false,
     "title": "Le délice des sens",
-    "place": "Tour Eiffel",
-    "cover": "/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg?raw=true",
+    "place": "Folie-Méricourt",
+    "cover": "/ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg",
     "entrees": [
       {
         "name": "Tartare de thon",
